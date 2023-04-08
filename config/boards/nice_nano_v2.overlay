@@ -1,4 +1,4 @@
-#include <dt-bindings/led/led.h>
+#include <dt-bindings/led/led_strip.h>
 
 &pinctrl {
 	spi1_default: spi1_default {
