@@ -15,7 +15,7 @@
 #define _FKEYS   3
 #define _NUMPAD  4
 
-&led_strip { chain-length = <11>; };
+// &led_strip { chain-length = <11>; };
 
 / {
     macros {
@@ -120,54 +120,53 @@
             layers = <_NUMPAD>;
         };
 
-        combo_LPAR {
+       combo_LBRC {
             timeout-ms = <50>;
-            key-positions = <13 14>;
-            bindings = <&kp LPAR>;
-        };
-
-        combo_RPAR {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp RPAR>;
-        };
-
-        combo_LBKT {
-            timeout-ms = <50>;
-            key-positions = <25 26>;
-            bindings = <&kp LBKT>;
-        };
-
-        combo_RBKT {
-            timeout-ms = <50>;
-            key-positions = <33 34>;
-            bindings = <&kp RBKT>;
-        };
-
-        combo_LBRC {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
+            key-positions = <3 4>;
             bindings = <&kp LBRC>;
         };
 
         combo_RBRC {
             timeout-ms = <50>;
-            key-positions = <9 10>;
+            key-positions = <7 8>;
             bindings = <&kp RBRC>;
+        };
+
+        combo_LPAR {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp LPAR>;
+        };
+
+        combo_RPAR {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp RPAR>;
+        };
+
+        combo_LBKT {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp LBKT>;
+        };
+
+        combo_RBKT {
+            timeout-ms = <50>;
+            key-positions = <31 32>;
+            bindings = <&kp RBKT>;
         };
 
         combo_LT {
             timeout-ms = <50>;
-            key-positions = <26 27>;
+            key-positions = <15 27>;
             bindings = <&kp LT>;
         };
 
         combo_GT {
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <20 32>;
             bindings = <&kp GT>;
         };
-
     };
 };
 
