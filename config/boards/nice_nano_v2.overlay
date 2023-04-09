@@ -15,6 +15,10 @@
 	};
 };
 
+&spi1 {
+    status = "disabled";
+};
+
 &spi3 {
 	compatible = "nordic,nrf-spim";
 	status = "okay";
