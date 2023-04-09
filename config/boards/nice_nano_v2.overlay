@@ -17,6 +17,7 @@
 
 &spi1 {
     status = "disabled";
+    /delete-node/ ws2812@0;
 };
 
 &spi3 {
@@ -36,7 +37,7 @@
 		spi-max-frequency = <4000000>;
 
 		/* WS2812 */
-		chain-length = <1>; /* arbitrary; change at will */
+		chain-length = <11>; /* arbitrary; change at will */
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
 
