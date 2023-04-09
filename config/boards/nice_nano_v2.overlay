@@ -3,17 +3,13 @@
 &pinctrl {
 	spi3_default: spi3_default {
 		group1 {
-			psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>,
-					<NRF_PSEL(SPIM_MISO, 0, 7)>,
-					<NRF_PSEL(SPIM_SCK, 0, 5)>;
+			psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>;
 		};
 	};
 
 	spi3_sleep: spi3_sleep {
 		group1 {
-			psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>,
-					<NRF_PSEL(SPIM_MISO, 0, 7)>,
-					<NRF_PSEL(SPIM_SCK, 0, 5)>;
+			psels = <NRF_PSEL(SPIM_MOSI, 0, 6)>;
 			low-power-enable;
 		};
 	};
@@ -27,7 +23,7 @@
 	pinctrl-1 = <&spi3_sleep>;
 	pinctrl-names = "default", "sleep";
 
-	led_strip: ws2812@3 {
+	led_strip: ws2812@0 {
 		compatible = "worldsemi,ws2812-spi";
 		label = "WS2812";
 
