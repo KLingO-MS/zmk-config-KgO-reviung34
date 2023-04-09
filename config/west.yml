@@ -2,12 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: zmkfwlights
-      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: zmkfwlights
-      revision: underglow/move-to-spi3-for-led-strip-bus
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
