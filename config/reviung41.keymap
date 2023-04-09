@@ -15,6 +15,8 @@
 #define _FKEYS   3
 #define _NUMPAD  4
 
+&led_strip { chain-length = <11>; };
+
 / {
     macros {
         to_BASE: to_BASE {
