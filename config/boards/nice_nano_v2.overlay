@@ -28,7 +28,7 @@
 	pinctrl-1 = <&spi3_sleep>;
 	pinctrl-names = "default", "sleep";
 
-	led_strip_kgo: ws2812@3 {
+	led_strip_kgo: ws2812@0 {
 		compatible = "worldsemi,ws2812-spi";
 		label = "WS2812";
 
