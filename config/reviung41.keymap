@@ -311,7 +311,7 @@
 //                    | _BASE |      |   | SPACE | _BASE |
                         bindings = <
    &kp ESC &kp F1 &kp F2  &kp F3  &kp F4  &none      &none &kp C_AL_CALC &gui_x LG(X) X &ctrl_x LC(X) X &none    &kp DEL
-   &none   &kp F5 &kp F6  &kp F7  &kp F8  &none      &none &kp INS       &sk LGUI       &sk LCTRL       &sk LALT &sk LSHIFT
+   &kp C_VOICE_COMMAND &kp F5 &kp F6  &kp F7  &kp F8  &none      &none &kp INS       &sk LGUI       &sk LCTRL       &sk LALT &sk LSHIFT
    &kp Z   &kp F9 &kp F10 &kp F11 &kp F12 &none      &none &kp K_APP     &kp TAB        &none           &none    &kp RET
                                &to_BASE &trans &none &kp SPACE &to_BASE
                         >;
