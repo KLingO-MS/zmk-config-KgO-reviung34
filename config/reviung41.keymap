@@ -127,56 +127,56 @@
         };
 
         combo_LPAR {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <14 15>;
             bindings = <&kp LPAR>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_RPAR {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <20 21>;
             bindings = <&kp RPAR>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_LBRC {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <2 3>;
             bindings = <&kp LBRC>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_RBRC {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <8 9>;
             bindings = <&kp RBRC>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_LBKT {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <26 27>;
             bindings = <&kp LBKT>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_RBKT {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <32 33>;
             bindings = <&kp RBKT>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_LT {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <13 14>;
             bindings = <&kp LT>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_GT {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <21 22>;
             bindings = <&kp GT>;
             layers = <_BASE _NUM_SYM>;
