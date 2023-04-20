@@ -2,12 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: pete
-      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: pete
-      revision: zephyr/test-bt-instant-passed-fix
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
