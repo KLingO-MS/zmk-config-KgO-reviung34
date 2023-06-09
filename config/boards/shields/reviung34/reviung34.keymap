@@ -390,7 +390,7 @@
    &kp Q   &kp F &kp V &kp P &kp B      &kp K &kp L &kp U    &kp Y    &kp J
    &kp A   &kp R &kp S &kp T &kp G      &kp M &kp N &kp E    &kp I    &kp O
    &kp SQT &kp Z &kp C &kp D &kp W      &kp X &kp H &com_sem &dot_col &kp DQT
-         &td0 &bspctap LSHIFT BSPC      &spctap X SPACE &td1
+         &bspctap LSHIFT BSPC &td0      &td1 &spctap X SPACE
                         >;
                 };
 
@@ -404,7 +404,7 @@
    &kp EXCL &kp AT    &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
    &kp N1   &kp N2    &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
    &kp BSLH &kp QMARK &kp UNDER &kp MINUS &kp GRAVE      &kp TILDE &kp PLUS  &kp EQUAL &kp PIPE  &kp FSLH
-                                &kp SPACE &kp BSPC       &none     &none
+                                &kp BSPC  &kp SPACE      &kp SAPCE &none
                         >;
                 };
 
@@ -418,7 +418,7 @@
    &kp ESC    &none    &ctrl_x LC(X) X &gui_x LG(X) X &kp PSCRN      &kp PG_UP &kp HOME &kp UP   &kp END   &kp DEL
    &sk LSHIFT &sk LALT &sk LCTRL       &sk LGUI       &kp INS        &kp PG_DN &kp LEFT &kp DOWN &kp RIGHT &kp RET
    &none      &none    &kp C_AL_CALC   &kp TAB        &kp K_APP      &kp K_APP &kp TAB  &none    &none     &none
-                                       &to_BASE       &kp BSPC       &kp SPACE &to_BASE
+                                       &kp BSPC       &to_BASE       &to_BASE &kp SPACE
                         >;
                 };
                 
@@ -432,7 +432,7 @@
    &kp ESC &kp F1 &kp F2  &kp F3  &kp F4        &kp C_AL_CALC &gui_x LG(X) X &ctrl_x LC(X) X &none    &kp DEL
    &kp RET &kp F5 &kp F6  &kp F7  &kp F8        &kp INS       &sk LGUI       &sk LCTRL       &sk LALT &sk LSHIFT
    &none   &kp F9 &kp F10 &kp F11 &kp F12       &kp K_APP     &kp TAB        &none           &none    &none
-                        &kp SPACE &kp BSPC      &none         &none
+                         &kp BSPC &kp SPACE     &none         &none
                         >;
                 };
 
@@ -446,7 +446,7 @@
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &plus_multi   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_DOT
    &none        &kp C_VOL_DN &kp C_MUTE   &kp C_VOL_UP &out OUT_TOG      &kp ESC       &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_N0
    &none        &kp C_PREV   &kp C_PP     &kp C_NEXT   &bt BT_CLR        &minus_div    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp BSPC
-                                          &to_BASE     &kp BSPC          &kp KP_ENTER  &to_BASE
+                                          &kp BSPC     &to_BASE          &to_BASE      &kp KP_ENTER
                         >;
                 };                
     };
