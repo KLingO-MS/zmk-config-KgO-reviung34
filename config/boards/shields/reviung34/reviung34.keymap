@@ -16,11 +16,11 @@
 #define _FKEYS   3
 #define _NUMPAD  4
 
-#define RGB_BASE RGB_COLOR_HSB(30,90,2)
-#define RGB_NAVI RGB_COLOR_HSB(100,100,2)
-#define RGB_FKEYS RGB_COLOR_HSB(280,100,2)
-#define RGB_SYM RGB_COLOR_HSB(0,90,2)
-#define RGB_NPAD RGB_COLOR_HSB(200,100,2)
+#define RGB_BASE RGB_COLOR_HSB(230,20,3)
+#define RGB_NAVI RGB_COLOR_HSB(100,40,3)
+#define RGB_FKEYS RGB_COLOR_HSB(280,40,3)
+#define RGB_SYM RGB_COLOR_HSB(0,40,3)
+#define RGB_NPAD RGB_COLOR_HSB(200,40,3)
 
 &sk {
     quick-release;
@@ -127,16 +127,16 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_RESET_L {
+        combo_RESET {
             timeout-ms = <50>;
-            key-positions = <4 14 24>;
+            key-positions = <3 4 5 6>;
             bindings = <&rch A A>;
             // layers = <_NAVI>;
         };
 
-        combo_RESET_R {
+        combo_RGBEFF {
             timeout-ms = <50>;
-            key-positions = <5 15 25>;
+            key-positions = <14 15>;
             bindings = <&rgb_ug RGB_EFF>;
             // layers = <_FKEYS>;
         };
@@ -404,7 +404,7 @@
    &kp EXCL &kp AT    &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR
    &kp N1   &kp N2    &kp N3    &kp N4    &kp N5         &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
    &kp BSLH &kp QMARK &kp UNDER &kp MINUS &kp GRAVE      &kp TILDE &kp PLUS  &kp EQUAL &kp PIPE  &kp FSLH
-                                &kp BSPC  &kp SPACE      &kp SPACE &none
+                                &kp BSPC  &kp SPACE      &caps_word &none
                         >;
                 };
 
