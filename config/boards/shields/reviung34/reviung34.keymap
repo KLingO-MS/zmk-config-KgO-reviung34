@@ -152,7 +152,7 @@
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp TAB>;
-            quick-tap-ms = <100>;
+            global-quick-tap;
             layers = <_BASE _NUM_SYM>;
         };
 
