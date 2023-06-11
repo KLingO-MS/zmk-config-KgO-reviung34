@@ -17,10 +17,10 @@
 #define _NUMPAD  4
 
 #define RGB_BASE RGB_COLOR_HSB(230,20,3)
-#define RGB_NAVI RGB_COLOR_HSB(100,60,3)
-#define RGB_FKEYS RGB_COLOR_HSB(280,60,3)
-#define RGB_SYM RGB_COLOR_HSB(0,60,3)
-#define RGB_NPAD RGB_COLOR_HSB(200,60,3)
+#define RGB_NAVI RGB_COLOR_HSB(100,80,3)
+#define RGB_FKEYS RGB_COLOR_HSB(280,80,3)
+#define RGB_SYM RGB_COLOR_HSB(0,80,3)
+#define RGB_NPAD RGB_COLOR_HSB(200,80,3)
 
 &sk {
     quick-release;
@@ -152,6 +152,7 @@
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp TAB>;
+            quick-tap-ms = <100>;
             layers = <_BASE _NUM_SYM>;
         };
 
