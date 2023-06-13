@@ -355,8 +355,8 @@
             label = "BSPC_TAP_LSHIFT_HOLD";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <180>;
-            quick-tap-ms = <180>;
+            tapping-term-ms = <170>;
+            quick-tap-ms = <170>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
@@ -366,8 +366,8 @@
             label = "SPACE_TAP_MO_SYM_HOLD";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <180>;
-            quick-tap-ms = <180>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <220>;
             // global-quick-tap;
             bindings = <&mo_SYM>, <&kp>;
         };
