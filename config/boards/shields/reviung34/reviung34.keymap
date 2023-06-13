@@ -317,7 +317,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
-        }
+        };
 
         /* right-hand HRMs */
         hmr: hrm_right {
@@ -330,7 +330,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
-        }
+        };
 
         bspctap: backsapce-tap {
                 compatible = "zmk,behavior-hold-tap";
