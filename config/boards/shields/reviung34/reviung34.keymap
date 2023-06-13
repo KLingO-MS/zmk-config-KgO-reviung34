@@ -314,7 +314,7 @@
             flavor = "balanced";
             tapping-term-ms = <300>;
             quick-tap-ms = <270>;                // repeat on tap-into-hold
-            global-quick-tap-ms;
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
@@ -328,7 +328,7 @@
             flavor = "balanced";
             tapping-term-ms = <300>;
             quick-tap-ms = <270>;                // repeat on tap-into-hold
-            global-quick-tap-ms;
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
