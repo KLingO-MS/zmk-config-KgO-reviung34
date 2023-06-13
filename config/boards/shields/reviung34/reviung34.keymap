@@ -130,126 +130,124 @@
             timeout-ms = <50>;
             key-positions = <LTI LTC RTC RTI>;
             bindings = <&rch A A>;
-            // layers = <_NAVI>;
         };
 
         combo_RGBEFF {
             timeout-ms = <50>;
             key-positions = <LMC RMC>;
             bindings = <&rgb_ug RGB_EFF>;
-            // layers = <_FKEYS>;
         };
 
         combo_ESC {
             timeout-ms = <50>;
             key-positions = <LTR LTM>;
             bindings = <&kp ESC>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
 
         combo_TAB {
             timeout-ms = <50>;
             key-positions = <LMR LMM>;
             bindings = <&kp TAB>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
 
         combo_DEL {
             timeout-ms = <50>;
             key-positions = <RTM RTR>;
             bindings = <&kp DEL>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
             
         combo_RET {
             timeout-ms = <50>;
             key-positions = <RMM RMR>;
             bindings = <&kp RET>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
             
         combo_lAltGr {
             timeout-ms = <50>;
             key-positions = <LBP LBR>;
             bindings = <&kp RALT>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
 
         combo_rAltGr {
             timeout-ms = <50>;
             key-positions = <RBR RBP>;
             bindings = <&kp RALT>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
           
         combo_LPAR {
             timeout-ms = <45>;
             key-positions = <LMM LMI>;
             bindings = <&kp LPAR>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
 
         combo_RPAR {
             timeout-ms = <45>;
             key-positions = <RMI RMM>;
             bindings = <&kp RPAR>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
 
         combo_LBRC {
             timeout-ms = <45>;
             key-positions = <LTM LTI>;
             bindings = <&kp LBRC>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
 
         combo_RBRC {
             timeout-ms = <45>;
             key-positions = <RTI RTM>;
             bindings = <&kp RBRC>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
 
         combo_LBKT {
             timeout-ms = <45>;
             key-positions = <LBM LBI>;
             bindings = <&kp LBKT>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
 
         combo_RBKT {
             timeout-ms = <45>;
             key-positions = <RBI RBM>;
             bindings = <&kp RBKT>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
 
 //        combo_FSLH {
 //            timeout-ms = <45>;
 //            key-positions = <7 8>;
 //            bindings = <&kp FSLH>;
-//            layers = <_BASE _NUM_SYM>;
+//            layers = <_BASE _SYM>;
 //        };
 
 //        combo_BSLH {
 //            timeout-ms = <45>;
 //            key-positions = <1 2>;
 //            bindings = <&kp BSLH>;
-//            layers = <_BASE _NUM_SYM>;
+//            layers = <_BASE _SYM>;
 //        };
 
         combo_GT {
             timeout-ms = <45>;
             key-positions = <LBR LBM>;
             bindings = <&kp GT>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
 
         combo_LT {
             timeout-ms = <45>;
             key-positions = <RBM RBR>;
             bindings = <&kp LT>;
-            layers = <_BASE _NUM_SYM>;
+            layers = <_BASE _SYM>;
         };
     };
 
