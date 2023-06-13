@@ -130,98 +130,98 @@
         compatible = "zmk,combos";
         combo_RESET {
             timeout-ms = <50>;
-            key-positions = <3 4 5 6>;
+            key-positions = <LTI LTC RTC RTI>;
             bindings = <&rch A A>;
             // layers = <_NAVI>;
         };
 
         combo_RGBEFF {
             timeout-ms = <50>;
-            key-positions = <14 15>;
+            key-positions = <LMC RMC>;
             bindings = <&rgb_ug RGB_EFF>;
             // layers = <_FKEYS>;
         };
 
         combo_ESC {
             timeout-ms = <50>;
-            key-positions = <1 2>;
+            key-positions = <LTR LTM>;
             bindings = <&kp ESC>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_TAB {
             timeout-ms = <50>;
-            key-positions = <11 12>;
+            key-positions = <LMR LMM>;
             bindings = <&kp TAB>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_DEL {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <RTM RTR>;
             bindings = <&kp DEL>;
             layers = <_BASE _NUM_SYM>;
         };
             
         combo_RET {
             timeout-ms = <50>;
-            key-positions = <17 18>;
+            key-positions = <RMM RMR>;
             bindings = <&kp RET>;
             layers = <_BASE _NUM_SYM>;
         };
             
         combo_lAltGr {
             timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <LBP LBR>;
             bindings = <&kp RALT>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_rAltGr {
             timeout-ms = <50>;
-            key-positions = <28 29>;
+            key-positions = <RBR RBP>;
             bindings = <&kp RALT>;
             layers = <_BASE _NUM_SYM>;
         };
           
         combo_LPAR {
             timeout-ms = <45>;
-            key-positions = <12 13>;
+            key-positions = <LMM LMI>;
             bindings = <&kp LPAR>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_RPAR {
             timeout-ms = <45>;
-            key-positions = <16 17>;
+            key-positions = <RMI RMM>;
             bindings = <&kp RPAR>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_LBRC {
             timeout-ms = <45>;
-            key-positions = <2 3>;
+            key-positions = <LTM LTI>;
             bindings = <&kp LBRC>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_RBRC {
             timeout-ms = <45>;
-            key-positions = <6 7>;
+            key-positions = <RTI RTM>;
             bindings = <&kp RBRC>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_LBKT {
             timeout-ms = <45>;
-            key-positions = <22 23>;
+            key-positions = <LBM LBI>;
             bindings = <&kp LBKT>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_RBKT {
             timeout-ms = <45>;
-            key-positions = <26 27>;
+            key-positions = <RBI RBM>;
             bindings = <&kp RBKT>;
             layers = <_BASE _NUM_SYM>;
         };
@@ -242,14 +242,14 @@
 
         combo_GT {
             timeout-ms = <45>;
-            key-positions = <27 28>;
+            key-positions = <LBR LBM>;
             bindings = <&kp GT>;
             layers = <_BASE _NUM_SYM>;
         };
 
         combo_LT {
             timeout-ms = <45>;
-            key-positions = <21 22>;
+            key-positions = <RBM RBR>;
             bindings = <&kp LT>;
             layers = <_BASE _NUM_SYM>;
         };
@@ -335,34 +335,34 @@
         };
 
         bspctap: backsapce-tap {
-                compatible = "zmk,behavior-hold-tap";
-                label = "BSPC_TAP_LSHIFT_HOLD";
-                #binding-cells = <2>;
-                flavor = "balanced";
-                tapping-term-ms = <180>;
-                quick-tap-ms = <180>;
-                // global-quick-tap;
-                bindings = <&kp>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";
+            label = "BSPC_TAP_LSHIFT_HOLD";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
+            // global-quick-tap;
+            bindings = <&kp>, <&kp>;
         };
 
         spctap: space-tap {
-                compatible = "zmk,behavior-hold-tap";
-                label = "SPACE_TAP_MO_SYM_HOLD";
-                #binding-cells = <2>;
-                flavor = "balanced";
-                tapping-term-ms = <180>;
-                quick-tap-ms = <180>;
-                // global-quick-tap;
-                bindings = <&mo_NUM_SYM>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACE_TAP_MO_SYM_HOLD";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <180>;
+            // global-quick-tap;
+            bindings = <&mo_NUM_SYM>, <&kp>;
         };
 
         rch: reset-combo-hold {
-                compatible = "zmk,behavior-hold-tap";
-                label = "RESET_COMBO_HOLD";
-                #binding-cells = <2>;
-                flavor = "tap-preferred";
-                tapping-term-ms = <2500>;
-                bindings = <&to_BOOT>, <&sys_reset>;
+            compatible = "zmk,behavior-hold-tap";
+            label = "RESET_COMBO_HOLD";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <2500>;
+            bindings = <&to_BOOT>, <&sys_reset>;
         };
 
         com_sem: comma_semicolon {
