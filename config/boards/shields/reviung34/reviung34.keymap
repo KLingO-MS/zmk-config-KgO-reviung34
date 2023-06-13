@@ -310,6 +310,7 @@
         hml: hrm_left {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_HRM";
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <300>;
             quick-tap-ms = <270>;                // repeat on tap-into-hold
@@ -323,6 +324,7 @@
         hmr: hrm_right {
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_HRM";
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <300>;
             quick-tap-ms = <270>;                // repeat on tap-into-hold
