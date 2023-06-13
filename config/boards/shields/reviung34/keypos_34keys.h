@@ -9,45 +9,48 @@
 
 #pragma once
 
-#define LT0  4  // left-top row
-#define LT1  3
-#define LT2  2
-#define LT3  1
-#define LT4  0
+#define LTC  4  // left-top row
+#define LTI  3
+#define LTM  2
+#define LTR  1
+#define LTP  0
 
-#define RT0  5  // right-top row
-#define RT1  6
-#define RT2  7
-#define RT3  8
-#define RT4  9
+#define RTC  5  // right-top row
+#define RTI  6
+#define RTM  7
+#define RTR  8
+#define RTP  9
 
-#define LM0 14  // left-middle row
-#define LM1 13
-#define LM2 12
-#define LM3 11
-#define LM4 10
+#define LMC 14  // left-middle row
+#define LMI 13
+#define LMM 12
+#define LMR 11
+#define LMP 10
 
-#define RM0 15  // right-middle row
-#define RM1 16
-#define RM2 17
-#define RM3 18
-#define RM4 19
+#define RMC 15  // right-middle row
+#define RMI 16
+#define RMM 17
+#define RMR 18
+#define RMP 19
 
-#define LB0 24  // left-bottom row
-#define LB1 23
-#define LB2 22
-#define LB3 21
-#define LB4 20
+#define LBC 24  // left-bottom row
+#define LBI 23
+#define LBM 22
+#define LBR 21
+#define LBP 20
 
-#define RB0 25  // right-bottom row
-#define RB1 26
-#define RB2 27
-#define RB3 28
-#define RB4 29
+#define RBC 25  // right-bottom row
+#define RBI 26
+#define RBM 27
+#define RBR 28
+#define RBP 29
 
-#define LH0 31  // left thumb keys
-#define LH1 30
+#define LHI 31  // left thumb keys
+#define LHO 30
 
-#define RH0 32  // right thumb keys
-#define RH1 33
+#define RHI 32  // right thumb keys
+#define RHO 33
 
+#define KEYS_L LTC LTI LTM LTR LTP LMC LMI LMM LMR LMP LBC LBI LBM LBR LBP  // left-hand keys
+#define KEYS_R RTC RTI RTM RTR RTP RMC RMI RMM RMR RMP RBC RBI RBM RBR RBP  // right-hand keys
+#define THUMBS LHO LHI RHI RHO
