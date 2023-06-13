@@ -430,16 +430,16 @@
 // |  Q  |  F  |  V  |  P  |  B  |    |  K  |  L  |  U  |  Y  |  J  |
 // |  A  |  R  |  S  |  T  |  G  |    |  M  |  N  |  E  |  I  |  O  |
 // |  '  |  Z  |  C  |  D  |  W  |    |  X  |  H  | , ; | . : |  "  |
-//         | _NAVI | SHIFT(BSPC) |    | _NUM_SYM(SPC) | _FKEYS(_NUMPAD) |
+//         | _NAVI | SHIFT(BSPC) |    | _SYM(SPC) | _FKEYS(_NUMPAD) |
                         bindings = <
-   &kp Q        &kp F       &kp V        &kp P       &kp B      &kp K &kp L       &kp U        &kp Y       &kp J
-   &hml LSHFT A &hml LALT R &hml LCTRL S &hml LGUI T &kp G      &kp M &hmr LGUI N &hmr LCTRL E &hmr LALT I &hmr LSHFT O
-   &kp SQT      &kp Z       &kp C        &kp D       &kp W      &kp X &kp H       &com_sem     &dot_col    &kp DQT
-                                &bspctap LSHIFT BSPC &fnavtap   &btnptap &spctap X SPACE
+   &kp Q        &kp F       &kp V        &kp P       &kp B           &kp K        &kp L       &kp U        &kp Y       &kp J
+   &hml LSHFT A &hml LALT R &hml LCTRL S &hml LGUI T &kp G           &kp M        &hmr LGUI N &hmr LCTRL E &hmr LALT I &hmr LSHFT O
+   &kp SQT      &kp Z       &kp C        &kp D       &kp W           &kp X        &kp H       &com_sem     &dot_col    &kp DQT
+                                &bspctap LSHIFT BSPC &fnavtap X X    &btnptap X X &spctap X SPACE
                         >;
                 };
 
-                num_sym_layer {
+                sym_layer {
 // -------------------------------    -------------------------------
 // |  !  |  @  |  #  |  $  |  %  |    |  ^  |  &  |  *  |  (  |  )  |
 // |  1  |  2  |  3  |  4  |  5  |    |  6  |  7  |  8  |  9  |  0  |
