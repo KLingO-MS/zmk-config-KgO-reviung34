@@ -238,14 +238,14 @@
 
         combo_GT {
             timeout-ms = <45>;
-            key-positions = <LBR LBM>;
+            key-positions = <RBR RBM>;
             bindings = <&kp GT>;
             layers = <_BASE _SYM>;
         };
 
         combo_LT {
             timeout-ms = <45>;
-            key-positions = <RBM RBR>;
+            key-positions = <LBM LBR>;
             bindings = <&kp LT>;
             layers = <_BASE _SYM>;
         };
