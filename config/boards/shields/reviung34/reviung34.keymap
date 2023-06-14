@@ -250,12 +250,13 @@
             layers = <_BASE _SYM>;
         };
     };
+
     behaviors {
         tdl: tap_dance_left {
             compatible = "zmk,behavior-tap-dance";
             label = "LOCK_F_NAV";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <250>;
             bindings = <&mo_F_NAV>, <&to_F_NAV>;
         };
  
@@ -263,29 +264,29 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LOCK_BT_NP";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <250>;
             bindings = <&mo_BT_NP>, <&to_BT_NP>;
         };
 
-        fnavtap: fnav-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LOCK_F_NAV";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <180>;
-            quick-tap-ms = <180>;
-            bindings = <&mo_F_NAV>, <&to_F_NAV>;
-        };
+//        fnavtap: fnav-tap {
+//            compatible = "zmk,behavior-hold-tap";
+//            label = "LOCK_F_NAV";
+//            #binding-cells = <2>;
+//            flavor = "balanced";
+//            tapping-term-ms = <180>;
+//            quick-tap-ms = <180>;
+//            bindings = <&mo_F_NAV>, <&to_F_NAV>;
+//        };
 
-        btnptap: btnp-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LOCK_BT_NP";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <180>;
-            quick-tap-ms = <180>;
-            bindings = <&mo_BT_NP>, <&to_BT_NP>;
-        };
+//        btnptap: btnp-tap {
+//            compatible = "zmk,behavior-hold-tap";
+//            label = "LOCK_BT_NP";
+//            #binding-cells = <2>;
+//            flavor = "balanced";
+//            tapping-term-ms = <180>;
+//            quick-tap-ms = <180>;
+//            bindings = <&mo_BT_NP>, <&to_BT_NP>;
+//        };
 
         win_cp: win_cp {
             compatible = "zmk,behavior-tap-dance";
