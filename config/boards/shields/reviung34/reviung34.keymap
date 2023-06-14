@@ -250,23 +250,22 @@
             layers = <_BASE _SYM>;
         };
     };
-
     behaviors {
-        // tdl: tap_dance_left {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "LOCK_F_NAV";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <400>;
-        //     bindings = <&mo_F_NAV>, <&to_F_NAV>;
-        // };
+        tdl: tap_dance_left {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LOCK_F_NAV";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&mo_F_NAV>, <&to_F_NAV>;
+        };
  
-        // tdr: tap_dance_right {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "LOCK_BT_NP";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <400>;
-        //     bindings = <&mo_BT_NP>, <&to_BT_NP>;
-        // };
+        tdr: tap_dance_right {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LOCK_BT_NP";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&mo_BT_NP>, <&to_BT_NP>;
+        };
 
         fnavtap: fnav-tap {
             compatible = "zmk,behavior-hold-tap";
@@ -432,10 +431,10 @@
 // |  '  |  Z  |  C  |  D  |  W  |    |  X  |  H  | , ; | . : |  "  |
 //         | _NAVI | SHIFT(BSPC) |    | _SYM(SPC) | _FKEYS(_NUMPAD) |
                         bindings = <
-   &kp Q        &kp F       &kp V        &kp P       &kp B           &kp K        &kp L       &kp U        &kp Y       &kp J
-   &hml LSHFT A &hml LALT R &hml LCTRL S &hml LGUI T &kp G           &kp M        &hmr LGUI N &hmr LCTRL E &hmr LALT I &hmr LSHFT O
-   &kp SQT      &kp Z       &kp C        &kp D       &kp W           &kp X        &kp H       &com_sem     &dot_col    &kp DQT
-                                &bspctap LSHIFT BSPC &fnavtap X X    &btnptap X X &spctap X SPACE
+   &kp Q        &kp F       &kp V        &kp P       &kp B     &kp K  &kp L       &kp U        &kp Y       &kp J
+   &hml LSHFT A &hml LALT R &hml LCTRL S &hml LGUI T &kp G     &kp M  &hmr LGUI N &hmr LCTRL E &hmr LALT I &hmr LSHFT O
+   &kp SQT      &kp Z       &kp C        &kp D       &kp W     &kp X  &kp H       &com_sem     &dot_col    &kp DQT
+                                &bspctap LSHIFT BSPC &tdl      &tdr   &spctap X SPACE
                         >;
                 };
 
