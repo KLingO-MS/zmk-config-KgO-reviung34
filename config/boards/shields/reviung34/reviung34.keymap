@@ -16,10 +16,10 @@
 #define _F_NAV   2
 #define _BT_NP   3
 
-#define RGB_BASE RGB_COLOR_HSB(230,20,3)
-#define RGB_SYM RGB_COLOR_HSB(0,80,3)
-#define RGB_F_NAV RGB_COLOR_HSB(100,80,3)
-#define RGB_BT_NP RGB_COLOR_HSB(200,80,3)
+#define RGB_BASE RGB_COLOR_HSB(250,20,3)
+#define RGB_SYM RGB_COLOR_HSB(0,90,3)
+#define RGB_F_NAV RGB_COLOR_HSB(100,100,3)
+#define RGB_BT_NP RGB_COLOR_HSB(200,100,3)
 
 &sk {
     quick-release;
@@ -454,16 +454,16 @@
                 };
 
                 f_nav_layer {
-// ------------------------------    -------------------------------------
-// | ESC | F1 | F2  | F3  | F4  |    | PGUP | HOME  |  UP   | END  | DEL |
-// | TAB | F5 | F6  | F7  | F8  |    | PGDN | LEFT  | DOWN  | RGHT | RET |
-// | PRN | F9 | F10 | F11 | F12 |    | CALC | c,v,x | c,v,x | APP  | INS |
+// -------------------------------    -------------------------------------
+// | ESC  | F1 | F2  | F3  | F4  |    | PGUP | HOME  |  UP   | END  | DEL |
+// | TAB  | F5 | F6  | F7  | F8  |    | PGDN | LEFT  | DOWN  | RGHT | RET |
+// | CALC | F9 | F10 | F11 | F12 |    | PRNS | c,v,x | c,v,x | APP  | INS |
 //                | BSPC |_BASE |    | _BASE | SPACE |
                         bindings = <
-   &kp ESC        &kp F1       &kp F2        &kp F3       &kp F4      &kp PG_UP     &kp HOME       &kp UP          &kp END         &kp DEL
-   &hml LSHFT TAB &hml LALT F5 &hml LCTRL F6 &hml LGUI F7 &kp F8      &kp PG_DN     &hmr LGUI LEFT &hmr LCTRL DOWN &hmr LALT RIGHT &hmr LSHFT RET
-   &kp PSCRN      &kp F9       &kp F10       &kp F11      &kp F12     &kp C_AL_CALC &gui_x LG(X) X &ctrl_x LC(X) X &kp K_APP       &kp INS
-                                             &kp BSPC     &to_BASE    &to_BASE      &kp SPACE
+   &kp ESC        &kp F1       &kp F2        &kp F3       &kp F4      &kp PG_UP  &kp HOME       &kp UP          &kp END         &kp DEL
+   &hml LSHFT TAB &hml LALT F5 &hml LCTRL F6 &hml LGUI F7 &kp F8      &kp PG_DN  &hmr LGUI LEFT &hmr LCTRL DOWN &hmr LALT RIGHT &hmr LSHFT RET
+   &kp C_AL_CALC  &kp F9       &kp F10       &kp F11      &kp F12     &kp PSCRN  &gui_x LG(X) X &ctrl_x LC(X) X &kp K_APP       &kp INS
+                                             &kp BSPC     &to_BASE    &to_BASE   &kp SPACE
                         >;
                 };
                 
