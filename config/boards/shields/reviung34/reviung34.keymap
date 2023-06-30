@@ -18,7 +18,7 @@
 
 #define RGB_BASE RGB_COLOR_HSB(250,20,3)
 #define RGB_SYM RGB_COLOR_HSB(0,90,3)
-#define RGB_F_NAV RGB_COLOR_HSB(100,100,3)
+#define RGB_F_NAV RGB_COLOR_HSB(80,100,3)
 #define RGB_BT_NP RGB_COLOR_HSB(200,100,3)
 
 &sk {
@@ -252,7 +252,7 @@
     };
 
     behaviors {
-        tdl: tap_dance_left {
+        td_fnav: tap_dance_fnav {
             compatible = "zmk,behavior-tap-dance";
             label = "LOCK_F_NAV";
             #binding-cells = <0>;
@@ -260,7 +260,7 @@
             bindings = <&mo_F_NAV>, <&to_F_NAV>;
         };
  
-        tdr: tap_dance_right {
+        td_btnp: tap_dance_btnp {
             compatible = "zmk,behavior-tap-dance";
             label = "LOCK_BT_NP";
             #binding-cells = <0>;
@@ -352,24 +352,24 @@
 
         bspctap: backsapce-tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "BSPC_TAP_LSHIFT_HOLD";
+            label = "BSPC_TAP_MO_SYM_HOLD";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <170>;
             quick-tap-ms = <170>;
             // global-quick-tap;
-            bindings = <&kp>, <&kp>;
+            bindings = <&mo_SYM>, <&kp>;
         };
 
         spctap: space-tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "SPACE_TAP_MO_SYM_HOLD";
+            label = "SPACE_TAP_SHIFT_HOLD";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <220>;
             quick-tap-ms = <220>;
             // global-quick-tap;
-            bindings = <&mo_SYM>, <&kp>;
+            bindings = <&kp>, <&kp>;
         };
 
         rch: reset-combo-hold {
@@ -430,12 +430,12 @@
 // |  Q  |  F  |  V  |  P  |  B  |    |  K  |  L  |  U  |  Y  |  J  |
 // |  A  |  R  |  S  |  T  |  G  |    |  M  |  N  |  E  |  I  |  O  |
 // |  '  |  Z  |  C  |  D  |  W  |    |  X  |  H  | , ; | . : |  "  |
-//         | _NAVI | SHIFT(BSPC) |    | _SYM(SPC) | _FKEYS(_NUMPAD) |
+//          | _SYM(BSPC) | _BTNP |    | _FNAV | SHIFT(SPC) |
                         bindings = <
    &kp Q        &kp F       &kp V        &kp P       &kp B     &kp K  &kp L       &kp U        &kp Y       &kp J
    &hml LSHFT A &hml LALT R &hml LCTRL S &hml LGUI T &kp G     &kp M  &hmr LGUI N &hmr LCTRL E &hmr LALT I &hmr LSHFT O
    &kp SQT      &kp Z       &kp C        &kp D       &kp W     &kp X  &kp H       &com_sem     &dot_col    &kp DQT
-                                &bspctap LSHIFT BSPC &tdl      &tdr   &spctap X SPACE
+                                 &bspctap X BSPC  &td_btnp     &td_fnav   &spctap LSHFT SPACE
                         >;
                 };
 
@@ -443,13 +443,13 @@
 // -------------------------------    -------------------------------
 // |  !  |  @  |  #  |  $  |  %  |    |  ^  |  &  |  *  |  (  |  )  |
 // |  1  |  2  |  3  |  4  |  5  |    |  6  |  7  |  8  |  9  |  0  |
-// |  \  |  ?  |  _  |  -  |  `  |    |  ~  |  +  |  =  |  |  |  /  |
-//                  | BSPC | SPC |    |  CW  |     |
+// |  ?  |  \  |  _  |  -  |  `  |    |  ~  |  +  |  =  |  /  |  |  |
+//                    | CW |     |    | BSPC | SPC |
                         bindings = <
    &kp EXCL      &kp AT       &kp HASH      &kp DLLR     &kp PRCNT      &kp CARET &kp AMPS     &kp ASTRK     &kp LPAR     &kp RPAR
    &hml LSHFT N1 &hml LALT N2 &hml LCTRL N3 &hml LGUI N4 &kp N5         &kp N6    &hmr LGUI N7 &hmr LCTRL N8 &hmr LALT N9 &hmr LSHFT N0
-   &kp BSLH      &kp QMARK    &kp UNDER     &kp MINUS    &kp GRAVE      &kp TILDE &kp PLUS     &kp EQUAL     &kp PIPE     &kp FSLH
-                                            &kp BSPC     &kp SPACE      &caps_word &none
+   &kp QMARK     &kp BSLH     &kp UNDER     &kp MINUS    &kp GRAVE      &kp TILDE &kp PLUS     &kp EQUAL     &kp FSLH     &kp PIPE
+                                            &caps_word   &none          &kp BSPC  &kp SPACE      
                         >;
                 };
 
@@ -458,7 +458,7 @@
 // | ESC  | F1 | F2  | F3  | F4  |    | PGUP | HOME  |  UP   | END  | DEL |
 // | TAB  | F5 | F6  | F7  | F8  |    | PGDN | LEFT  | DOWN  | RGHT | RET |
 // | CALC | F9 | F10 | F11 | F12 |    | PRNS | c,v,x | c,v,x | APP  | INS |
-//                | BSPC |_BASE |    | _BASE | SPACE |
+//                | BSPC | _BASE |    | _BASE | SPACE |
                         bindings = <
    &kp ESC        &kp F1       &kp F2        &kp F3       &kp F4      &kp PG_UP  &kp HOME       &kp UP          &kp END         &kp DEL
    &hml LSHFT TAB &hml LALT F5 &hml LCTRL F6 &hml LGUI F7 &kp F8      &kp PG_DN  &hmr LGUI LEFT &hmr LCTRL DOWN &hmr LALT RIGHT &hmr LSHFT RET
