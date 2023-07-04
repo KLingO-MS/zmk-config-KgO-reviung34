@@ -17,9 +17,9 @@
 #define _BTF     3
 
 #define RGB_BASE RGB_COLOR_HSB(250,20,3)
-#define RGB_SYM RGB_COLOR_HSB(25,100,3)
+#define RGB_SYM RGB_COLOR_HSB(20,100,4)
 #define RGB_NAV RGB_COLOR_HSB(200,100,3)
-#define RGB_BTF RGB_COLOR_HSB(250,100,3)
+#define RGB_BTF RGB_COLOR_HSB(250,100,4)
 
 &sk {
     quick-release;
@@ -143,23 +143,23 @@
 
         combo_BTF {
             timeout-ms = <50>;
-            key-positions = <LHI RHI>;
+            key-positions = <LHO RHO>;
             bindings = <&mo_BTF>;
         };
 
-        combo_NAV_L {
-            timeout-ms = <50>;
-            key-positions = <RMI RMM RMR>;
-            bindings = <&to_NAV>;
-            layers = <_BASE>;
-        };
+        // combo_NAV_L {
+        //     timeout-ms = <50>;
+        //     key-positions = <RMI RMM RMR>;
+        //     bindings = <&to_NAV>;
+        //     layers = <_BASE>;
+        // };
 
-        combo_NAV_U {
-            timeout-ms = <50>;
-            key-positions = <RMI RMM RMR>;
-            bindings = <&to_BASE>;
-            layers = <_NAV>;
-        };
+        // combo_NAV_U {
+        //     timeout-ms = <50>;
+        //     key-positions = <RMI RMM RMR>;
+        //     bindings = <&to_BASE>;
+        //     layers = <_NAV>;
+        // };
 
         // combo_ESC {
         //     timeout-ms = <40>;
