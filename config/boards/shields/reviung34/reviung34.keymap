@@ -147,19 +147,19 @@
             bindings = <&mo_BTF>;
         };
 
-        // combo_NAV_L {
-        //     timeout-ms = <50>;
-        //     key-positions = <RMI RMM RMR>;
-        //     bindings = <&to_NAV>;
-        //     layers = <_BASE>;
-        // };
+        combo_NAV_L {
+            timeout-ms = <50>;
+            key-positions = <RMI RMM RMR>;
+            bindings = <&to_NAV>;
+            layers = <_BASE>;
+        };
 
-        // combo_NAV_U {
-        //     timeout-ms = <50>;
-        //     key-positions = <RMI RMM RMR>;
-        //     bindings = <&to_BASE>;
-        //     layers = <_NAV>;
-        // };
+        combo_NAV_U {
+            timeout-ms = <50>;
+            key-positions = <RMI RMM RMR>;
+            bindings = <&to_BASE>;
+            layers = <_NAV>;
+        };
 
         // combo_ESC {
         //     timeout-ms = <40>;
@@ -563,6 +563,22 @@
         //     tapping-term-ms = <400>;
         //     bindings = <&kp KP_MINUS>, <&kp KP_DIVIDE>;
         // };
+
+        lpar_lt: lpar_lt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPAR_LT";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp LT>;
+            mods = <(MOD_LSFT)>;
+        };
+        
+        rpar_gt: rpar_gt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPAR_GT";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp GT>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {
@@ -572,13 +588,13 @@
 // -------------------------------    -------------------------------
 // |  Q  |  F  |  V  |  P  |  B  |    |  K  |  L  |  U  |  Y  |  J  |
 // |  A  |  R  |  S  |  T  |  G  |    |  M  |  N  |  E  |  I  |  O  |
-// | ' " |  Z  |  C  |  D  | , < |    | . > |  H  |  W  |  X  | ; : |
-//           | _SYM(BSPC) | SHFT |    | L_NAV | _NAV(SPC) |
+// |  '  |  Z  |  C  |  D  | ( < |    | ) > |  H  |  W  |  X  |  "  |
+//            | _SYM(BSPC) | , ; |    | . : | _NAV(SPC) |
                         bindings = <
-   &hml RALT Q &kp F        &kp V       &kp P        &kp B       &kp K   &kp L        &kp U       &kp Y        &hmr RALT J
-   &hml LALT A &hml LCTRL R &hml LGUI S &hml LSHFT T &kp G       &kp M   &hmr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
-   &kp SQT     &kp Z        &kp C       &kp D        &kp COMMA   &kp DOT &kp H        &kp W       &kp X        &kp SEMI
-                                     &bspctap X BSPC &kp LSHFT   &to_NAV &spctap X SPACE
+   &hml RALT Q &kp F        &kp V       &kp P        &kp B       &kp K     &kp L        &kp U       &kp Y        &hmr RALT J
+   &hml LALT A &hml LCTRL R &hml LGUI S &hml LSHFT T &kp G       &kp M     &hmr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
+   &kp SQT     &kp Z        &kp C       &kp D        &lpar_lt    &rpar_gt  &kp H        &kp W       &kp X        &kp DQT
+                                     &bspctap X BSPC &com_sem    &dot_col  &spctap X SPACE
                         >;
                 };
 
@@ -606,7 +622,7 @@
    &kp ESC       &kp C_PREV          &kp C_PP         &kp C_NEXT          &kp K_APP          &kp INS   &kp HOME        &kp UP         &kp END          &kp DEL
    &hml LALT TAB &hml LCTRL C_VOL_DN &hml LGUI C_MUTE &hml LSHFT C_VOL_UP &kp PSCRN          &kp BSPC  &hmr LSHFT LEFT &hmr LGUI DOWN &hmr LCTRL RIGHT &hmr LALT RET
    &none         &win_cp             &mac_cp          &kp X               &none              &none     &kp PG_UP       &kp SPACE      &kp PG_DN        &none
-                                                                 &kp BSPC &kp SPACE          &to_BASE  &kp LSHFT
+                                                                 &kp BSPC &kp SPACE          &kp SPACE &kp LSHFT
                         >;
                 };
                 
