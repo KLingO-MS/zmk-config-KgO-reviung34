@@ -327,17 +327,17 @@
             layers = <_BASE _SYM>;
         };
 
-        combo_FSLH {
+        combo_COLON {
             timeout-ms = <40>;
             key-positions = <RBM RBR>;
-            bindings = <&kp FSLH>;
+            bindings = <&kp COLON>;
             layers = <_BASE _SYM _NAV>;
         };
 
-        combo_BSLH {
+        combo_SEMI {
             timeout-ms = <40>;
             key-positions = <LBM LBR>;
-            bindings = <&kp BSLH>;
+            bindings = <&kp SEMI>;
             layers = <_BASE _SYM _NAV>;
         };
 
@@ -367,6 +367,20 @@
             key-positions = <LMC LTC>;
             bindings = <&kp LT>;
             layers = <_BASE _SYM>;
+        };
+
+        combo_FSLH {
+            timeout-ms = <40>;
+            key-positions = <RMC RBC>;
+            bindings = <&kp FSLH>;
+            layers = <_BASE _SYM _NAV>;
+        };
+
+        combo_BSLH {
+            timeout-ms = <40>;
+            key-positions = <LMC LBC>;
+            bindings = <&kp BSLH>;
+            layers = <_BASE _SYM _NAV>;
         };
     };
 
