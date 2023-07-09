@@ -17,9 +17,9 @@
 #define _BTF     3
 
 #define RGB_BASE RGB_COLOR_HSB(250,20,3)
-#define RGB_SYM RGB_COLOR_HSB(20,100,4)
-#define RGB_NAV RGB_COLOR_HSB(200,100,3)
-#define RGB_BTF RGB_COLOR_HSB(250,100,4)
+#define RGB_NAV RGB_COLOR_HSB(20,100,4)
+#define RGB_BTF RGB_COLOR_HSB(200,100,3)
+#define RGB_SYM RGB_COLOR_HSB(250,100,4)
 
 &sk {
     quick-release;
@@ -564,21 +564,21 @@
         //     bindings = <&kp KP_MINUS>, <&kp KP_DIVIDE>;
         // };
 
-        lpar_lt: lpar_lt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LPAR_LT";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp LT>;
-            mods = <(MOD_LSFT)>;
-        };
+        // lpar_lt: lpar_lt {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "LPAR_LT";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp LPAR>, <&kp LT>;
+        //     mods = <(MOD_LSFT)>;
+        // };
         
-        rpar_gt: rpar_gt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RPAR_GT";
-            #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp GT>;
-            mods = <(MOD_LSFT)>;
-        };
+        // rpar_gt: rpar_gt {
+        //     compatible = "zmk,behavior-mod-morph";
+        //     label = "RPAR_GT";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp RPAR>, <&kp GT>;
+        //     mods = <(MOD_LSFT)>;
+        // };
     };
 
     keymap {
@@ -593,7 +593,7 @@
                         bindings = <
    &hml RALT Q &kp F        &kp V       &kp P        &kp B       &kp K     &kp L        &kp U       &kp Y        &hmr RALT J
    &hml LALT A &hml LCTRL R &hml LGUI S &hml LSHFT T &kp G       &kp M     &hmr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
-   &kp SQT     &kp Z        &kp C       &kp D        &lpar_lt    &rpar_gt  &kp H        &kp W       &kp X        &kp DQT
+   &kp SQT     &kp Z        &kp C       &kp D        &kp COMMA   &kp DOT   &kp H        &kp W       &kp X        &kp SEMI
                                      &bspctap X BSPC &mo_NAV     &mo_BTF &spctap LSHFT SPACE
                         >;
                 };
