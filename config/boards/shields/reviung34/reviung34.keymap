@@ -507,7 +507,7 @@
             label = "SPACE_TAP_NAV_HOLD";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <170>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
