@@ -4,10 +4,13 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: xudongz
+      url-base: https://github.com/xudongzheng
   projects:
     - name: zmk
-      remote: caksoylar
-      revision: fix-battery-reporting
+      remote: xudongz
+#      revision: fix-battery-reporting
+      revision: custom-wq-pr
       import: app/west.yml
   self:
     path: config
