@@ -638,9 +638,9 @@
 // | ' " |  Z  |  C  |  D  | , < |    | . > |  H  |  W  |  X  | ; : |
 //            | _SYM(BSPC) | , ; |    | . : | _NAV(SPC) |
                         bindings = <
-   &hml RALT Q &kp F        &kp V        &kp P       &kp B     &kp K     &kp L        &kp U       &kp Y        &hmr RALT J
-   &hml LALT A &hml LCTRL R &hml LSHFT S &hml LGUI T &kp G     &kp M     &hmr LGUI N &hmr LSHFT E &hmr LCTRL I &hmr LALT O 
-   &kp SQT     &kp Z        &kp C        &kp D       &kp COMMA &kp DOT   &kp H        &kp W       &kp X        &kp SEMI
+   &hml RALT Q &kp F        &kp V       &kp P        &kp B     &kp K     &kp L        &kp U       &kp Y        &hmr RALT J
+   &hml LALT A &hml LCTRL R &hml LGUI S &hml LSHFT T &kp G     &kp M     &hmr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
+   &kp SQT     &kp Z        &kp C       &kp D        &kp COMMA &kp DOT   &kp H        &kp W       &kp X        &kp SEMI
                                      &bst 0 BSPC  &com_sem     &dot_col  &spt 0 SPACE
                         >;
                 };
