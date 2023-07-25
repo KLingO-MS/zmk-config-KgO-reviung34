@@ -146,7 +146,7 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_RESET {
+        combo_BOOT {
             timeout-ms = <50>;
             key-positions = <LBR RBR>;
             bindings = <&to_BOOT>;
@@ -238,28 +238,28 @@
 
         combo_LBRC {
             timeout-ms = <40>;
-            key-positions = <LTM LTI>;
+            key-positions = <LTC LTI>;
             bindings = <&kp LBRC>;
             layers = <_BASE _SYM>;
         };
 
         combo_RBRC {
             timeout-ms = <40>;
-            key-positions = <RTI RTM>;
+            key-positions = <RTI RTC>;
             bindings = <&kp RBRC>;
             layers = <_BASE _SYM>;
         };
 
         combo_LBKT {
             timeout-ms = <40>;
-            key-positions = <LBM LBI>;
+            key-positions = <LTM LTI>;
             bindings = <&kp LBKT>;
             layers = <_BASE _SYM>;
         };
 
         combo_RBKT {
             timeout-ms = <40>;
-            key-positions = <RBI RBM>;
+            key-positions = <RTI RTM>;
             bindings = <&kp RBKT>;
             layers = <_BASE _SYM>;
         };
@@ -357,28 +357,28 @@
             
         combo_GT {
             timeout-ms = <45>;
-            key-positions = <RTI RTC>;
+            key-positions = <RMI RMC>;
             bindings = <&kp GT>;
             layers = <_BASE _SYM>;
         };
 
         combo_LT {
             timeout-ms = <45>;
-            key-positions = <LTI LTC>;
+            key-positions = <LMI LMC>;
             bindings = <&kp LT>;
             layers = <_BASE _SYM>;
         };
 
         combo_FSLH {
             timeout-ms = <45>;
-            key-positions = <RMI RMC>;
+            key-positions = <RBI RBM>;
             bindings = <&kp FSLH>;
             layers = <_BASE _SYM _NAV>;
         };
 
         combo_BSLH {
             timeout-ms = <45>;
-            key-positions = <LMI LMC>;
+            key-positions = <LBI LBM>;
             bindings = <&kp BSLH>;
             layers = <_BASE _SYM _NAV>;
         };
@@ -468,9 +468,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_HRM";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <200>;                // repeat on tap-into-hold
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <170>;                // repeat on tap-into-hold
             global-quick-tap;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -482,9 +482,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_HRM";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <200>;                // repeat on tap-into-hold
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <170>;                // repeat on tap-into-hold
             global-quick-tap;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
@@ -507,8 +507,8 @@
             label = "SPC_TAP_NAV_HOLD";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <170>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
             // global-quick-tap;
             bindings = <&mo_NAV>, <&kp>;
         };
@@ -535,16 +535,16 @@
         //     bindings = <&mo_BTF>, <&dot_col>;
         // };
 
-        ht: hold-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <170>;
-            // global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
+        // ht: hold-tap {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "HOLD_TAP";
+        //     #binding-cells = <2>;
+        //     flavor = "balanced";
+        //     tapping-term-ms = <200>;
+        //     quick-tap-ms = <170>;
+        //     // global-quick-tap;
+        //     bindings = <&kp>, <&kp>;
+        // };
 
         // rch: reset-combo-hold {
         //     compatible = "zmk,behavior-hold-tap";

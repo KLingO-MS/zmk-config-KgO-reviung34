@@ -8,9 +8,10 @@ manifest:
       url-base: https://github.com/xudongzheng
   projects:
     - name: zmk
-      remote: xudongz
+      remote: zmkfirmware
 #      revision: fix-battery-reporting
-      revision: custom-wq-pr
+#      revision: custom-wq-pr
+      revision: main
       import: app/west.yml
   self:
     path: config
