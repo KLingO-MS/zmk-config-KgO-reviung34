@@ -469,7 +469,7 @@
             label = "LEFT_HRM";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <170>;                // repeat on tap-into-hold
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -483,7 +483,7 @@
             label = "RIGHT_HRM";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <250>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <170>;                // repeat on tap-into-hold
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -638,24 +638,24 @@
 // |  '  |  Z  |  C  |  D  |  ;  |    |  :  |  H  |  W  |  X  |  "  |
 //            | _SYM(BSPC) | , < |    | . > | _NAV(SPC) |
                         bindings = <
-   &hml RALT Q &kp F        &kp V       &kp P        &kp B     &kp K     &kp L        &kp U       &kp Y        &hmr RALT J
+   &hml RALT Q &kp F        &kp V       &kp P        &kp B     &kp K     &kp L        &kp U       &kp Y        &hmr RALT X
    &hml LALT A &hml LCTRL R &hml LGUI S &hml LSHFT T &kp G     &kp M     &hmr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
-   &kp SQT     &kp Z        &kp C       &kp D        &kp SEMI  &kp COLON &kp H        &kp W       &kp X        &kp DQT
+   &kp SQT     &kp Z        &kp C       &kp D        &kp SEMI  &kp COLON &kp H        &kp W       &kp J        &kp DQT
                                         &bst 0 BSPC  &kp COMMA &kp DOT   &spt 0 SPACE
                         >;
                 };
 
                 sym_layer {
 // -------------------------------    -------------------------------
-// |  !  |  @  |  #  |  $  |  &  |    | ` ~ |  7  |  8  |  9  |  0  |
-// |  ?  |  *  |  -  |  +  |  %  |    |  ^  |  4  |  5  |  6  |  .  |
+// |  @  |  &  |  !  |  ?  |  $  |    | ` ~ |  7  |  8  |  9  |  .  |
+// |  #  |  *  |  -  |  +  |  %  |    |  ^  |  4  |  5  |  6  |  0  |
 // |  \  |  |  |  _  |  =  | [ { |    | ] } |  1  |  2  |  3  |  /  |
-//                   |     |     |    | BSPC | SPC |
+//                   |     |     |    | SPC | BSPC |
                         bindings = <
-   &hml RALT EXCL  &kp AT           &kp HASH        &kp DLLR         &kp AMPS      &kp GRAVE &kp N7        &kp N8       &kp N9        &hmr RALT N0
-   &hml LALT QMARK &hml LCTRL ASTRK &hml LGUI MINUS &hml LSHFT PLUS  &kp PRCNT     &kp CARET &hmr LSHFT N4 &hmr LGUI N5 &hmr LCTRL N6 &hmr LALT KP_DOT
-   &kp BSLH        &kp PIPE         &kp UNDER       &kp EQUAL        &kp LBKT      &kp RBKT  &kp N1        &kp N2       &kp N3        &kp SLASH
-                                                               &none &none         &kp BSPC  &kp SPACE
+   &hml RALT AT   &kp AMPS         &kp EXCL        &kp QMARK        &kp DLLR      &kp GRAVE &kp N7        &kp N8       &kp N9        &hmr RALT KP_DOT
+   &hml LALT HASH &hml LCTRL ASTRK &hml LGUI MINUS &hml LSHFT PLUS  &kp PRCNT     &kp CARET &hmr LSHFT N4 &hmr LGUI N5 &hmr LCTRL N6 &hmr LALT N0
+   &kp BSLH       &kp PIPE         &kp UNDER       &kp EQUAL        &kp LBKT      &kp RBKT  &kp N1        &kp N2       &kp N3        &kp SLASH
+                                                              &none &none         &kp SPACE &kp BSPC
                         >;
                 };
 
