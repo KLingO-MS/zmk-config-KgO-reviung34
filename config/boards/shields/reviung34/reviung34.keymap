@@ -647,13 +647,13 @@
 
                 sym_layer {
 // -------------------------------    -------------------------------
-// |  @  |  &  |  !  |  ?  |  $  |    | ` ~ |  7  |  8  |  9  |  .  |
-// |  #  |  *  |  -  |  +  |  %  |    |  ^  |  4  |  5  |  6  |  0  |
+// |  @  |  &  |  ?  |  !  |  $  |    | ` ~ |  7  |  8  |  9  |  0  |
+// |  #  |  *  |  -  |  +  |  %  |    |  ^  |  4  |  5  |  6  |  .  |
 // |  \  |  |  |  _  |  =  | [ { |    | ] } |  1  |  2  |  3  |  /  |
 //                   |     |     |    | BSPC | SPC |
                         bindings = <
-   &hml RALT AT   &kp AMPS         &kp EXCL        &kp QMARK        &kp DLLR      &kp GRAVE &kp N7        &kp N8       &kp N9        &hmr RALT KP_DOT
-   &hml LALT HASH &hml LCTRL ASTRK &hml LGUI MINUS &hml LSHFT PLUS  &kp PRCNT     &kp CARET &hmr LSHFT N4 &hmr LGUI N5 &hmr LCTRL N6 &hmr LALT N0
+   &hml RALT AT   &kp AMPS         &kp QMARK       &kp EXCL         &kp DLLR      &kp GRAVE &kp N7        &kp N8       &kp N9        &hmr RALT N0
+   &hml LALT HASH &hml LCTRL ASTRK &hml LGUI MINUS &hml LSHFT PLUS  &kp PRCNT     &kp CARET &hmr LSHFT N4 &hmr LGUI N5 &hmr LCTRL N6 &hmr LALT KP_DOT
    &kp BSLH       &kp PIPE         &kp UNDER       &kp EQUAL        &kp LBKT      &kp RBKT  &kp N1        &kp N2       &kp N3        &kp SLASH
                                                               &none &none         &kp BSPC  &kp SPACE
                         >;
