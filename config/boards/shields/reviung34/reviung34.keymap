@@ -30,14 +30,6 @@
 };
 
 / {
-    // conditional_layers {
-    //     compatible = "zmk,conditional-layers";
-    //     tri_layer {
-    //         if-layers = <1 2>;
-    //         then-layer = <4>;
-    //     };
-    // };
-
     macros {
         to_BASE: to_BASE {
             label = "ZM_to_BASE";
@@ -104,18 +96,6 @@
                 , <&macro_release &mo _NAV>
                 ;
         };
-
-        // to_BTF: to_BTF {
-        //     label = "ZM_to_BTF";
-        //     compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     wait-ms = <0>;
-        //     tap-ms = <0>;
-        //     bindings
-        //         = <&rgb_ug RGB_BTF>
-        //         , <&to _BTF>
-        //         ;
-        // };
 
         mo_BTF: mo_BTF {
             label = "ZM_mo_BTF";
@@ -187,34 +167,6 @@
             layers = <_BASE _NAV>;
         };
 
-        // combo_ESC {
-        //     timeout-ms = <40>;
-        //     key-positions = <LTP LTR>;
-        //     bindings = <&kp ESC>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_TAB {
-        //     timeout-ms = <40>;
-        //     key-positions = <LMP LMR>;
-        //     bindings = <&kp TAB>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_DEL {
-        //     timeout-ms = <40>;
-        //     key-positions = <RTR RTP>;
-        //     bindings = <&kp DEL>;
-        //     layers = <_BASE _SYM _BT_NP>;
-        // };
-            
-        // combo_RET {
-        //     timeout-ms = <40>;
-        //     key-positions = <RMR RMP>;
-        //     bindings = <&kp RET>;
-        //     layers = <_BASE _SYM _BT_NP>;
-        // };
-            
         combo_CAPS {
             timeout-ms = <50>;
             key-positions = <LMI RMI>;
@@ -264,205 +216,36 @@
             layers = <_BASE _SYM>;
         };
 
-        // combo_COMMA {
-        //     timeout-ms = <40>;
-        //     key-positions = <LMR LMM>;
-        //     bindings = <&kp COMMA>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_DOT {
-        //     timeout-ms = <40>;
-        //     key-positions = <RMR RMM>;
-        //     bindings = <&kp DOT>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_X {
-        //     timeout-ms = <40>;
-        //     key-positions = <LMR LMM>;
-        //     bindings = <&kp X>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_W {
-        //     timeout-ms = <40>;
-        //     key-positions = <RMR RMM>;
-        //     bindings = <&kp W>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_SEMI_COL {
-        //     timeout-ms = <40>;
-        //     key-positions = <RMR RMM>;
-        //     bindings = <&sem_col>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_SEMI {
-        //     timeout-ms = <40>;
-        //     key-positions = <LBR LBM>;
-        //     bindings = <&kp SEMICOLON>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_COLON {
-        //     timeout-ms = <40>;
-        //     key-positions = <RBR RBM>;
-        //     bindings = <&kp COLON>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        combo_COM_SEM {
-            timeout-ms = <45>;
-            key-positions = <LMR LMM>;
-            bindings = <&com_sem>;
-            layers = <_BASE _SYM>;
-        };
-
-        combo_DOT_COL {
-            timeout-ms = <45>;
-            key-positions = <RMR RMM>;
-            bindings = <&dot_col>;
-            layers = <_BASE _SYM>;
-        };
-
-        combo_COLON {
-            timeout-ms = <45>;
-            key-positions = <RBR RBM>;
-            bindings = <&kp COLON>;
-            layers = <_BASE _SYM _NAV>;
-        };
-
-        combo_SEMI {
-            timeout-ms = <45>;
-            key-positions = <LBR LBM>;
-            bindings = <&kp SEMI>;
-            layers = <_BASE _SYM _NAV>;
-        };
-
-        combo_SQT {
-            timeout-ms = <45>;
-            key-positions = <LTM LTR>;
-            bindings = <&kp SQT>;
-            layers = <_BASE _SYM>;
-        };
-
-        combo_DQT {
-            timeout-ms = <45>;
-            key-positions = <RTM RTR>;
-            bindings = <&kp DQT>;
-            layers = <_BASE _SYM>;
-        };
-            
         combo_GT {
             timeout-ms = <45>;
-            key-positions = <RMI RMC>;
+            key-positions = <RTM RTR>;
             bindings = <&kp GT>;
             layers = <_BASE _SYM>;
         };
 
         combo_LT {
             timeout-ms = <45>;
-            key-positions = <LMI LMC>;
+            key-positions = <LTM LTR>;
             bindings = <&kp LT>;
             layers = <_BASE _SYM>;
         };
 
         combo_FSLH {
             timeout-ms = <45>;
-            key-positions = <RBI RBM>;
+            key-positions = <RMM RMR>;
             bindings = <&kp FSLH>;
             layers = <_BASE _SYM _NAV>;
         };
 
         combo_BSLH {
             timeout-ms = <45>;
-            key-positions = <LBI LBM>;
+            key-positions = <LMM LMR>;
             bindings = <&kp BSLH>;
             layers = <_BASE _SYM _NAV>;
         };
     };
 
     behaviors {
-        // td_fnav: tap_dance_fnav {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "LOCK_F_NAV";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <250>;
-        //     bindings = <&mo_F_NAV>, <&to_F_NAV>;
-        // };
- 
-        // td_btnp: tap_dance_btnp {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "LOCK_BT_NP";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <250>;
-        //     bindings = <&mo_BT_NP>, <&to_BT_NP>;
-        // };
-
-    //    ht_fnav: hold_tap_fnav {
-    //        compatible = "zmk,behavior-hold-tap";
-    //        label = "SL_F_NAV";
-    //        #binding-cells = <2>;
-    //        flavor = "balanced";
-    //        tapping-term-ms = <180>;
-    //        quick-tap-ms = <180>;
-    //        bindings = <&mo_F_NAV>, <&sl>;
-    //    };
-
-    //    ht_btnp: hold_tap_btnp {
-    //        compatible = "zmk,behavior-hold-tap";
-    //        label = "SL_BT_NP";
-    //        #binding-cells = <2>;
-    //        flavor = "balanced";
-    //        tapping-term-ms = <180>;
-    //        quick-tap-ms = <180>;
-    //        bindings = <&mo_BT_NP>, <&sl>;
-    //    };
-
-        // copy_cut: copy_cut {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "COPY_CUT";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <200>;
-        //     bindings = <&kp C>, <&kp X>;
-        // };
-
-        win_cp: win_cp {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CTRL_COPY_PASTA";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp LC(C)>, <&kp LC(V)>;
-        };
-
-        mac_cp: mac_cp {
-            compatible = "zmk,behavior-tap-dance";
-            label = "GUI_COPY_PASTA";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp LG(C)>, <&kp LG(V)>;
-        };
-
-        // ctrl_x: ctrl_x {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "CTRL_CUT_HOLD";
-        //     #binding-cells = <2>;
-        //     flavor = "tap-preferred";
-        //     tapping-term-ms = <400>;
-        //     bindings = <&kp>, <&win_cp>;
-        // };
-
-        // gui_x: gui_x {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "GUI_CUT_HOLD";
-        //     #binding-cells = <2>;
-        //     flavor = "tap-preferred";
-        //     tapping-term-ms = <400>;
-        //     bindings = <&kp>, <&mac_cp>;
-        // };
-
         /* left-hand HRMs */
         hml: hrm_left {
             compatible = "zmk,behavior-hold-tap";
@@ -513,119 +296,6 @@
             bindings = <&mo_NAV>, <&kp>;
         };
 
-        // comt: comma-tap {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "COMMA_TAP_NAV_HOLD";
-        //     #binding-cells = <2>;
-        //     flavor = "balanced";
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <170>;
-        //     // global-quick-tap;
-        //     bindings = <&mo_NAV>, <&com_sem>;
-        // };
-
-        // dott: dot-tap {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "DOT_TAP_BTF_HOLD";
-        //     #binding-cells = <2>;
-        //     flavor = "balanced";
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <170>;
-        //     // global-quick-tap;
-        //     bindings = <&mo_BTF>, <&dot_col>;
-        // };
-
-        // ht: hold-tap {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "HOLD_TAP";
-        //     #binding-cells = <2>;
-        //     flavor = "balanced";
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <170>;
-        //     // global-quick-tap;
-        //     bindings = <&kp>, <&kp>;
-        // };
-
-        // rch: reset-combo-hold {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "RESET_COMBO_HOLD";
-        //     #binding-cells = <2>;
-        //     flavor = "tap-preferred";
-        //     tapping-term-ms = <2500>;
-        //     bindings = <&to_BOOT>, <&sys_reset>;
-        // };
-
-        com_sem: comma_semicolon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_SEMI";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        // com_dot: comma_dot {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "COMMA_DOT";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp COMMA>, <&kp DOT>;
-        //     mods = <(MOD_LSFT)>;
-        // };
-
-        dot_col: dot_colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COLON";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
-            mods = <(MOD_LSFT)>;
-        };
-        
-        // sem_col: semicolon_colon {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "SEMI_COLON";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp SEMI>, <&kp COLON>;
-        //     mods = <(MOD_LSFT)>;
-        // };
-        
-        // qmk_exc: qmark_excl {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "QMARK_EXCL";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp QMARK>, <&kp EXCL>;
-        //     mods = <(MOD_LSFT)>;
-        // };
-
-        // plus_multi: plus_multiply {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "PLUS_MULTIPLY";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <400>;
-        //     bindings = <&kp KP_PLUS>, <&kp KP_MULTIPLY>;
-        // };
-
-        // minus_div: minus_divide {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "MINUS_DIVIDE";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <400>;
-        //     bindings = <&kp KP_MINUS>, <&kp KP_DIVIDE>;
-        // };
-
-        // sqt_lt: sqt_lt {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "SQT_LT";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp SQT>, <&kp LT>;
-        //     mods = <(MOD_LSFT)>;
-        // };
-        
-        // dqt_gt: dqt_gt {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "DQT_GT";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp DQT>, <&kp GT>;
-        //     mods = <(MOD_LSFT)>;
-        // };
     };
 
     keymap {
@@ -635,27 +305,27 @@
 // -------------------------------    -------------------------------
 // |  Q  |  Z  |  C  |  P  |  B  |    |  K  |  L  |  U  |  Y  |  X  |
 // |  A  |  R  |  S  |  T  |  G  |    |  M  |  N  |  E  |  I  |  O  |
-// |  '  |  W  |  V  |  D  |  ;  |    |  :  |  H  |  F  |  J  |  "  |
-//            | _SYM(BSPC) | , < |    | . > | _NAV(SPC) |
+// |  '  |  W  |  V  |  D  |  ,  |    |  .  |  H  |  F  |  J  |  ;  |
+//            | _SYM(BSPC) | SFT |    | SFT | _NAV(SPC) |
                         bindings = <
    &hml RALT Q &kp Z        &kp C       &kp P        &kp B     &kp K     &kp L        &kp U       &kp Y        &hmr RALT X
    &hml LALT A &hml LCTRL R &hml LGUI S &hml LSHFT T &kp G     &kp M     &hmr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
-   &kp SQT     &kp W        &kp V       &kp D        &kp SEMI  &kp COLON &kp H        &kp F       &kp J        &kp DQT
-                                        &bst 0 BSPC  &kp COMMA &kp DOT   &spt 0 SPACE
+   &kp SQT     &kp W        &kp V       &kp D        &kp COMMA &kp DOT   &kp H        &kp F       &kp J        &kp SEMI
+                                        &bst 0 BSPC  &kp LSHFT &kp LSHFT &spt 0 SPACE
                         >;
                 };
 
                 sym_layer {
 // -------------------------------    -------------------------------
-// |  @  |  &  |  ?  |  !  |  $  |    | ` ~ |  7  |  8  |  9  |  0  |
-// |  #  |  *  |  -  |  +  |  %  |    |  ^  |  4  |  5  |  6  |  .  |
-// |  \  |  |  |  _  |  =  | [ { |    | ] } |  1  |  2  |  3  |  /  |
+// |  #  |  &  |  ?  |  !  |  $  |    |  ^  |  7  |  8  |  9  |  %  |
+// |  @  |  *  |  -  |  +  |  `  |    |  ~  |  4  |  5  |  6  |  0  |
+// |  \  |  |  |  _  |  =  |  [  |    |  ]  |  1  |  2  |  3  |  /  |
 //                   |     |     |    | BSPC | SPC |
                         bindings = <
-   &hml RALT AT   &kp AMPS         &kp QMARK       &kp EXCL         &kp DLLR      &kp GRAVE &kp N7        &kp N8       &kp N9        &hmr RALT N0
-   &hml LALT HASH &hml LCTRL ASTRK &hml LGUI MINUS &hml LSHFT PLUS  &kp PRCNT     &kp CARET &hmr LSHFT N4 &hmr LGUI N5 &hmr LCTRL N6 &hmr LALT KP_DOT
-   &kp BSLH       &kp PIPE         &kp UNDER       &kp EQUAL        &kp LBKT      &kp RBKT  &kp N1        &kp N2       &kp N3        &kp SLASH
-                                                              &none &none         &kp BSPC  &kp SPACE
+   &hml RALT HASH &kp AMPS        &kp QMARK       &kp EXCL         &kp DLLR      &kp CARET &kp N7        &kp N8       &kp N9        &hmr RALT PRCNT
+   &hml LALT AT   &hml LCTRL STAR &hml LGUI MINUS &hml LSHFT PLUS  &kp GRAVE     &kp TILDE &hmr LSHFT N4 &hmr LGUI N5 &hmr LCTRL N6 &hmr LALT N0
+   &kp BSLH       &kp PIPE        &kp UNDER       &kp EQUAL        &kp LBKT      &kp RBKT  &kp N1        &kp N2       &kp N3        &kp SLASH
+                                                          &none    &none         &kp BSPC  &kp SPACE
                         >;
                 };
 
@@ -666,10 +336,10 @@
 // |     | PREV | PLAY | NEXT |     |    |      | PGUP | SPC  | PGDN |     |
 //                    |      | BSPC |    | BSPC | SHFT |
                         bindings = <
-   &kp ESC       &win_cp             &mac_cp          &kp X               &kp K_APP          &kp INS   &kp HOME        &kp UP         &kp END          &kp DEL
-   &hml LALT TAB &hml LCTRL C_VOL_DN &hml LGUI C_MUTE &hml LSHFT C_VOL_UP &kp PSCRN          &kp BSPC  &hmr LSHFT LEFT &hmr LGUI DOWN &hmr LCTRL RIGHT &hmr LALT RET
-   &none         &kp C_PREV          &kp C_PP         &kp C_NEXT          &none              &none     &kp PG_UP       &kp SPACE      &kp PG_DN        &none
-                                                                   &none  &kp BSPC           &kp BSPC  &kp LSHFT 
+   &kp ESC       &kp C_VOL_UP      &kp SQT         &kp DQT        &kp PSCRN          &kp BSPC  &kp HOME        &kp UP         &kp END          &kp DEL
+   &hml LALT TAB &hml LCTRL C_MUTE &hml LGUI COMMA &hml LSHFT DOT &kp K_APP          &kp INS   &hmr LSHFT LEFT &hmr LGUI DOWN &hmr LCTRL RIGHT &hmr LALT RET
+   &none         &kp C_VOL_DN      &kp SEMI        &kp COLON      &none              &none     &kp PG_UP       &kp SPACE      &kp PG_DN        &none
+                                                           &none  &kp BSPC           &kp BSPC  &kp LSHFT 
                         >;
                 };
                 
