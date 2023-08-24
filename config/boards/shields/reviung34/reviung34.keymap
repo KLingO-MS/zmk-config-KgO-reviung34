@@ -29,6 +29,10 @@
     release-after-ms = <300>;
 };
 
+&num_word {
+    layers = <_SYM>;  // replace NUM by the location of numbers layer
+};
+
 / {
 // ------------------------- MACROS --------------------------------
     macros {
