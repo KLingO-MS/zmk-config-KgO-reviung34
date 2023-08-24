@@ -339,8 +339,8 @@
             label = "SPC_TAP_NAV_HOLD";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <170>;
             //global-quick-tap-ms = <100>;
             bindings = <&mo>, <&kp>;
         };
@@ -373,7 +373,7 @@
    &kp HASH     &kp AMPS        &kp QMARK       &kp EXCL        &kp DLLR      &kp CARET &kp N7        &kp N8       &kp N9        &kp PERCENT
    &hml LALT AT &hml LCTRL STAR &hml LGUI MINUS &hsl LSHFT PLUS &kp GRAVE     &kp TILDE &hsr LSHFT N4 &hmr LGUI N5 &hmr LCTRL N6 &hmr LALT N0
    &kp BSLH     &kp PIPE        &kp UNDER       &kp EQUAL       &kp LBKT      &kp RBKT  &kp N1        &kp N2       &kp N3        &kp SLASH
-                                                          &none &none         &kp BSPC  &kp SPACE
+                                                   &kp BSPC     &none         &kp BSPC  &spt _NAV SPACE
                         >;
                 };
 
