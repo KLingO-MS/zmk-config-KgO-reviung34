@@ -6,9 +6,11 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: xudongz
       url-base: https://github.com/xudongzheng
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: urob
 #      revision: fix-battery-reporting
 #      revision: custom-wq-pr
       revision: main
