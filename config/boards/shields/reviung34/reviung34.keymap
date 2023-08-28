@@ -360,12 +360,12 @@
 // -------------------------------    -------------------------------
 // |  Q  |  Z  |  C  |  P  |  B  |    |  K  |  L  |  U  |  Y  |  X  |
 // |  A  |  R  |  S  |  T  |  G  |    |  M  |  N  |  E  |  I  |  O  |
-// |  `  |  W  |  V  |  D  |  <  |    |  >  |  H  |  F  |  J  | Ralt |
+// |  ~  |  W  |  V  |  D  |  <  |    |  >  |  H  |  F  |  J  | Ralt |
 //           | _SYM(BSPC) | VOL- |    | VOL+ | _NAV(SPC) |
                         bindings = <
    &kp Q       &kp Z        &kp C       &kp P        &kp B           &kp K  &kp L        &kp U       &kp Y        &kp X
    &hml LALT A &hml LCTRL R &hml LGUI S &hsl LSHFT T &kp G           &kp M  &hsr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
-   &kp GRAVE   &kp W        &kp V       &kp D        &kp LT          &kp GT &kp H        &kp F       &kp J        &kp RALT
+   &kp TILDE   &kp W        &kp V       &kp D        &kp LT          &kp GT &kp H        &kp F       &kp J        &kp RALT
                                      &bst _SYM BSPC  &kp C_VOL_DN    &kp C_VOL_UP  &spt _NAV SPACE
                         >;
                 };
@@ -387,13 +387,13 @@
                 sym_layer {
 // -------------------------------    -------------------------------
 // |  %  |  |  |  +  |  *  |  {  |    |  }  |  #  |  $  |  &  |  @  |
-// |  ?  |  !  |  -  |  _  |  (  |    |  )  |  .  |  ,  |  "  |  '  |
-// |  ~  |  \  |  =  |  /  |  [  |    |  ]  |  :  |  ;  |  ^  | Ralt |
+// |  !  |  '  |  -  |  _  |  (  |    |  )  |  .  |  ,  |  "  |  ?  |
+// |  `  |  \  |  =  |  /  |  [  |    |  ]  |  :  |  ;  |  ^  | Ralt |
 //                  | BSPC |     |    |     | SPC |
                         bindings = <
-   &kp PRCNT       &kp PIPE        &kp PLUS        &kp STAR         &kp LBRC      &kp RBRC   &kp HASH       &kp DLLR        &kp AMPS       &kp AT
-   &hml LALT QMARK &hml LCTRL EXCL &hml LGUI MINUS &hsl LSHFT UNDER &kp LPAR      &kp RPAR   &hsr LSHFT DOT &hmr LGUI COMMA &hmr LCTRL DQT &hmr LALT SQT
-   &kp TILDE       &kp BSLH        &kp EQUAL       &kp SLASH        &kp LBKT      &kp RBKT   &kp COLON      &kp SEMI        &kp CARET      &kp RALT
+   &kp PRCNT      &kp PIPE       &kp PLUS        &kp STAR         &kp LBRC      &kp RBRC   &kp HASH       &kp DLLR        &kp AMPS       &kp AT
+   &hml LALT EXCL &hml LCTRL SQT &hml LGUI MINUS &hsl LSHFT UNDER &kp LPAR      &kp RPAR   &hsr LSHFT DOT &hmr LGUI COMMA &hmr LCTRL DQT &hmr LALT QMARK
+   &kp GRAVE      &kp BSLH       &kp EQUAL       &kp SLASH        &kp LBKT      &kp RBKT   &kp COLON      &kp SEMI        &kp CARET      &kp RALT
                                                           &kp BSPC  &none         &none   &spt _NAV SPACE
                         >;
                 };
