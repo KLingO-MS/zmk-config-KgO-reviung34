@@ -365,7 +365,7 @@
                         bindings = <
    &kp Q       &kp Z        &kp C       &kp P        &kp B           &kp K  &kp L        &kp U       &kp Y        &kp X
    &hml LALT A &hml LCTRL R &hml LGUI S &hsl LSHFT T &kp G           &kp M  &hsr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
-   &kp GRAVE   &kp W        &kp V       &kp D        &none           &none  &kp H        &kp F       &kp J        &kp RALT
+   &kp GRAVE   &kp W        &kp V       &kp D        &kp LT          &kp GT &kp H        &kp F       &kp J        &kp RALT
                                      &bst _SYM BSPC  &kp C_VOL_DN    &kp C_VOL_UP  &spt _NAV SPACE
                         >;
                 };
