@@ -358,28 +358,28 @@
 
                 base_layer {
 // -------------------------------    -------------------------------
-// |  Q  |  Z  |  C  |  P  |  B  |    |  K  |  L  |  U  |  Y  |  X  |
+// |  Q  |  Z  |  V  |  P  |  B  |    |  K  |  L  |  U  |  Y  |  X  |
 // |  A  |  R  |  S  |  T  |  G  |    |  M  |  N  |  E  |  I  |  O  |
-// |  ~  |  W  |  V  |  D  |  <  |    |  >  |  H  |  F  |  J  | Ralt |
+// |  ~  |  W  |  C  |  D  |  <  |    |  >  |  H  |  F  |  J  | Ralt |
 //           | _SYM(BSPC) | VOL- |    | VOL+ | _NAV(SPC) |
                         bindings = <
-   &kp Q       &kp Z        &kp C       &kp P        &kp B           &kp K  &kp L        &kp U       &kp Y        &kp X
+   &kp Q       &kp Z        &kp V       &kp P        &kp B           &kp K  &kp L        &kp U       &kp Y        &kp X
    &hml LALT A &hml LCTRL R &hml LGUI S &hsl LSHFT T &kp G           &kp M  &hsr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
-   &kp TILDE   &kp W        &kp V       &kp D        &kp LT          &kp GT &kp H        &kp F       &kp J        &kp RALT
+   &kp TILDE   &kp W        &kp C       &kp D        &kp LT          &kp GT &kp H        &kp F       &kp J        &kp RALT
                                      &bst _SYM BSPC  &kp C_VOL_DN    &kp C_VOL_UP  &spt _NAV SPACE
                         >;
                 };
 
                 nav_layer {
-// --------------------------------    -----------------------------------
-// | ESC |  7  |  8  |  9  | PSCR |    | PGUP | HOME |  UP  | END  | INS |
-// | TAB |  4  |  5  |  6  |  0   |    | PGDN | LEFT | SPC  | RGHT | RET |
-// | . , |  1  |  2  |  3  |      |    |      | DEL  | DOWN | APP  | Ralt |
-//                  | BSPC |      |    |      | SHFT |
+// --------------------------------    ----------------------------------
+// | ESC |  7  |  8  |  9  | PSCR |    | APP | HOME |  UP  | END  | INS |
+// | TAB |  4  |  5  |  6  |  0   |    | DEL | LEFT | SPC  | RGHT | RET |
+// | . , |  1  |  2  |  3  |      |    |     | PGUP | DOWN | PGDN | Ralt |
+//                  | BSPC |      |    |     | SHFT |
                         bindings = <
-   &kp ESC       &kp N7        &kp N8       &kp N9        &kp PSCRN       &kp PG_UP &kp HOME        &kp UP          &kp END          &kp INS
-   &hml LALT TAB &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp N0          &kp PG_DN &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
-   &kp KP_DOT    &kp N1        &kp N2       &kp N3        &none           &none     &kp DEL         &kp DOWN        &kp K_APP        &kp RALT
+   &hml LALT TAB &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp N0          &kp K_APP &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
+   &kp ESC       &kp N7        &kp N8       &kp N9        &kp PSCRN       &kp DEL   &kp HOME        &kp UP          &kp END          &kp INS
+   &kp KP_DOT    &kp N1        &kp N2       &kp N3        &none           &none     &kp PG_UP       &kp DOWN        &kp PG_DN        &kp RALT
                                            &bst _SYM BSPC &none           &none  &kp LSHFT
                         >;
                 };
