@@ -364,24 +364,24 @@
 // |  ~  |  G  |  C  |  K  |  <  |    |  >  |  H  |  F  |  J  | Ralt |
 //           | _SYM(BSPC) | VOL- |    | VOL+ | _NAV(SPC) |
                         bindings = <
-   &kp Q       &kp Z        &kp L       &kp D        &kp P           &kp B  &kp M        &kp U       &kp Y        &kp X
-   &hml LALT A &hml LCTRL S &hml LGUI R &hsl LSHFT T &kp W           &kp V  &hsr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
-   &kp TILDE   &kp G        &kp C       &kp K        &kp LT          &kp GT &kp H        &kp F       &kp J        &kp RALT
-                                     &bst _SYM BSPC  &kp C_VOL_DN    &kp C_VOL_UP  &spt _NAV SPACE
+   &kp Q       &kp Z        &kp L       &kp D        &kp P       &kp B  &kp M        &kp U       &kp Y        &kp X
+   &hml LALT A &hml LCTRL S &hml LGUI R &hsl LSHFT T &kp W       &kp V  &hsr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
+   &kp TILDE   &kp G        &kp C       &kp K        &kp LT      &kp GT &kp H        &kp F       &kp J        &kp RALT
+                                     &bst _SYM BSPC  &none       &none  &spt _NAV SPACE
                         >;
                 };
 
                 nav_layer {
 // --------------------------------    ----------------------------------
-// | ESC |  7  |  8  |  9  | PSCR |    | APP | HOME |  UP  | END  | INS |
-// |  0  |  4  |  5  |  6  | TAB  |    | DEL | LEFT | SPC  | RGHT | RET |
-// | . , |  1  |  2  |  3  |      |    |     | PGUP | DOWN | PGDN | Ralt |
-//                  | BSPC |      |    |     | SHFT |
+// | . ,  |  7  |  8  |  9  | ESC |    | APP | HOME |  UP  | END  | INS |
+// |  0   |  4  |  5  |  6  | TAB |    | DEL | LEFT | SPC  | RGHT | RET |
+// | PSCR |  1  |  2  |  3  | Vdn |    | Vup | PGUP | DOWN | PGDN | Ralt |
+//                   | BSPC |     |    |     | SHFT |
                         bindings = <
-   &kp ESC      &kp N7        &kp N8       &kp N9        &kp PSCRN       &kp K_APP &kp HOME        &kp UP          &kp END          &kp INS
-   &hml LALT N0 &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp TAB         &kp DEL   &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
-   &kp KP_DOT   &kp N1        &kp N2       &kp N3        &none           &none     &kp PG_UP       &kp DOWN        &kp PG_DN        &kp RALT
-                                           &bst _SYM BSPC &none           &none  &kp LSHFT
+   &kp KP_DOT   &kp N7        &kp N8       &kp N9        &kp ESC         &kp K_APP    &kp HOME        &kp UP          &kp END          &kp INS
+   &hml LALT N0 &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp TAB         &kp DEL      &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
+   &kp PSCRN    &kp N1        &kp N2       &kp N3        &kp C_VOL_DN    &kp C_VOL_UP &kp PG_UP       &kp DOWN        &kp PG_DN        &kp RALT
+                                          &bst _SYM BSPC &none           &none  &kp LSHFT
                         >;
                 };
                 
