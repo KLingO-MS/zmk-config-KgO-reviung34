@@ -134,7 +134,7 @@
 // ------------------------- LAYER COMBOS --------------------------------
         combo_BOOT {
             timeout-ms = <50>;
-            key-positions = <LBR RBR>;
+            key-positions = <LMC RMC>;
             bindings = <&to_BOOT>;
             layers = <_BTF>;
         };
@@ -199,7 +199,7 @@
 // ------------------------- CHARACTER COMBOS --------------------------------
         combo_MUTE {
             timeout-ms = <40>;
-            key-positions = <LHI RHI>;
+            key-positions = <RMI RMR>;
             bindings = <&kp C_MUTE>;
             // layers = <_BASE _SYM>;
         };
@@ -373,12 +373,12 @@
 
                 nav_layer {
 // --------------------------------    ----------------------------------
-// | . ,  |  7  |  8  |  9  | ESC |    | APP | HOME |  UP  | END  | INS |
+// | . ,  |  7  |  8  |  9  | ESC |    | INS | HOME |  UP  | END  | APP |
 // |  0   |  4  |  5  |  6  | TAB |    | DEL | LEFT | SPC  | RGHT | RET |
 // | PSCR |  1  |  2  |  3  | Vdn |    | Vup | PGUP | DOWN | PGDN | Ralt |
 //                   | BSPC |     |    |     | SHFT |
                         bindings = <
-   &kp KP_DOT   &kp N7        &kp N8       &kp N9        &kp ESC         &kp K_APP    &kp HOME        &kp UP          &kp END          &kp INS
+   &kp KP_DOT   &kp N7        &kp N8       &kp N9        &kp ESC         &kp INS      &kp HOME        &kp UP          &kp END          &kp K_APP
    &hml LALT N0 &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp TAB         &kp DEL      &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
    &kp PSCRN    &kp N1        &kp N2       &kp N3        &kp C_VOL_DN    &kp C_VOL_UP &kp PG_UP       &kp DOWN        &kp PG_DN        &kp RALT
                                           &bst _SYM BSPC &none           &none  &kp LSHFT
@@ -400,16 +400,16 @@
                 };
                 
                 btf_layer {
-// --------------------------------    ----------------------------------
-// | F1 |  F2   | F3  | F4  | F5  |    | BT1 | BT2  | BT3 |  BT4  | BT5 |
-// | F6 |  F7   | F8  | F9  | F10 |    | BT- | SHFT | GUI | CTRL  | ALT |
-// |    | RESET | F11 | F12 |     |    |     | USB  | RGB | RESET |     |
-//                    |     |     |    |     |     |
+// ----------------------------    ----------------------------------
+// | F11 | F7 | F8 | F9 | F12 |    | BT1 | BT2  | BT3 | BT4  | BT5 |
+// | F10 | F4 | F5 | F6 | RST |    | RST | SHFT | GUI | CTRL | ALT |
+// |     | F1 | F2 | F3 |     |    |     | USB  | RGB | BT-  |     |
+//                |     |     |    |     |     |
                         bindings = <
-   &kp F1 &kp F2     &kp F3  &kp F4  &kp F5        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4
-   &kp F6 &kp F7     &kp F8  &kp F9  &kp F10       &bt BT_CLR   &kp LSHFT    &kp LGUI        &kp LCTRL    &kp LALT
-   &none  &sys_reset &kp F11 &kp F12 &none         &none        &out OUT_TOG &rgb_ug RGB_TOG &sys_reset   &none
-                               &none &none         &none &none
+   &kp F11 &kp F7 &kp F8 &kp F9 &kp F12       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4
+   &kp F10 &kp F4 &kp F5 &kp F6 &sys_reset    &sys_reset   &kp LSHFT    &kp LGUI        &kp LCTRL    &kp LALT
+   &none   &kp F1 &kp F2 &kp F3 &none         &none        &out OUT_TOG &rgb_ug RGB_TOG &bt BT_CLR   &none
+                          &none &none         &none &none
                         >;
                 };                
     };
