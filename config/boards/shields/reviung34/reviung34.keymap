@@ -178,7 +178,7 @@
             timeout-ms = <50>;
             key-positions = <LMI RMI>;
             bindings = <&caps_word>;
-            global-quick-tap-ms = <200>;
+            require-prior-idle-ms = <200>;
             layers = <_BASE>;
         };
 
@@ -285,7 +285,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
             quick-tap-ms = <170>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <120>;
+            require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
@@ -299,7 +299,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
             quick-tap-ms = <170>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <120>;
+            require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
@@ -312,7 +312,7 @@
             flavor = "balanced";
             tapping-term-ms = <300>;
             quick-tap-ms = <170>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <120>;
+            require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
@@ -325,7 +325,7 @@
             flavor = "balanced";
             tapping-term-ms = <300>;
             quick-tap-ms = <170>;                // repeat on tap-into-hold
-            global-quick-tap-ms = <120>;
+            require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
@@ -338,7 +338,7 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <170>;
-            //global-quick-tap-ms = <100>;
+            //require-prior-idle-ms = <100>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -349,7 +349,7 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <170>;
-            //global-quick-tap-ms = <100>;
+            //require-prior-idle-ms = <100>;
             bindings = <&mo>, <&kp>;
         };
     };
