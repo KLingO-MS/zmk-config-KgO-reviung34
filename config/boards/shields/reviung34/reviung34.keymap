@@ -359,14 +359,14 @@
 
                 base_layer {
 // -------------------------------    -------------------------------
-// |  Q  |  Z  |  L  |  D  |  W  |    |  V  |  M  |  U  |  Y  |  X  |
-// |  A  |  S  |  R  |  T  |  B  |    |  K  |  N  |  E  |  I  |  O  |
-// |  ~  |  G  |  C  |  P  |  <  |    |  >  |  H  |  F  |  J  | Ralt |
+// |  Q  |  B  |  L  |  D  |  G  |    |  F  |  M  |  U  |  Y  |  X  |
+// |  A  |  S  |  R  |  T  |  V  |    |  K  |  N  |  E  |  I  |  O  |
+// |  ~  |  Z  |  C  |  P  |  <  |    |  >  |  H  |  W  |  J  | Ralt |
 //            | _SYM(BSPC) |     |    |     | _NAV(SPC) |
                         bindings = <
-   &kp Q       &kp Z        &kp L       &kp D        &kp W       &kp V  &kp M        &kp U       &kp Y        &kp X
-   &hml LALT A &hml LCTRL S &hml LGUI R &hsl LSHFT T &kp B       &kp K  &hsr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
-   &kp TILDE   &kp G        &kp C       &kp P        &kp LT      &kp GT &kp H        &kp F       &kp J        &kp RALT
+   &kp Q       &kp B        &kp L       &kp D        &kp G       &kp F  &kp M        &kp U       &kp Y        &kp X
+   &hml LALT A &hml LCTRL S &hml LGUI R &hsl LSHFT T &kp V       &kp K  &hsr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
+   &kp TILDE   &kp Z        &kp C       &kp P        &kp LT      &kp GT &kp H        &kp W       &kp J        &kp RALT
                                      &bst _SYM BSPC  &none       &none  &spt _NAV SPACE
                         >;
                 };
