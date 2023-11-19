@@ -276,6 +276,23 @@
     };
 
     behaviors {
+// ------------------------- TAP-DANCES --------------------------------
+        win_cp: win_cp {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CTRL_COPY_PASTA";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp LC(C)>, <&kp LC(V)>;
+        };
+
+        mac_cp: mac_cp {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GUI_COPY_PASTA";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp LG(C)>, <&kp LG(V)>;
+        };
+
 // ------------------------- HOLD-TAPS --------------------------------
         /* left-hand HRMs */
         hml: hrm_left {
@@ -359,28 +376,28 @@
 
                 base_layer {
 // -------------------------------    -------------------------------
-// |  Q  |  C  |  L  |  D  |  G  |    |  F  |  P  |  U  |  Y  |  X  |
-// |  A  |  S  |  R  |  T  |  B  |    |  K  |  N  |  E  |  I  |  O  |
-// |  ~  |  Z  |  V  |  M  |  <  |    |  >  |  H  |  W  |  J  | Ralt |
-//            | _SYM(BSPC) |     |    |     | _NAV(SPC) |
+// |  B  |  L  |  D  |  P  |  F  |    |  W  |  C  |  O  |  U  |  Y  |
+// |  N  |  R  |  T  |  H  |  K  |    |  G  |  S  |  A  |  E  |  I  |
+// |  V- |  J  |  M  |  V  |  <  |    |  >  |  Z  |  Q  |  X  |  V+ |
+//            | _SYM(BSPC) |  +  |    |  =  | _NAV(SPC) |
                         bindings = <
-   &kp Q       &kp C        &kp L       &kp D        &kp G       &kp F  &kp P        &kp U       &kp Y        &kp X
-   &hml LALT A &hml LCTRL S &hml LGUI R &hsl LSHFT T &kp B       &kp K  &hsr LSHFT N &hmr LGUI E &hmr LCTRL I &hmr LALT O 
-   &kp TILDE   &kp Z        &kp V       &kp M        &kp LT      &kp GT &kp H        &kp W       &kp J        &kp RALT
-                                     &bst _SYM BSPC  &none       &none  &spt _NAV SPACE
+   &kp B        &kp L        &kp D       &kp P        &kp F       &kp W  &kp C        &kp O       &kp U        &kp Y
+   &hml LALT N  &hml LCTRL R &hml LGUI T &hsl LSHFT H &kp K       &kp G  &hsr LSHFT S &hmr LGUI A &hmr LCTRL E &hmr LALT I
+   &kp C_VOL_DN &kp J        &kp M       &kp V        &kp LT      &kp GT &kp Z        &kp Q       &kp X        &kp C_VOL_UP
+                                   &bst _SYM BSPC  &kp PLUS       &kp EQUAL  &spt _NAV SPACE
                         >;
                 };
 
                 nav_layer {
 // --------------------------------    -----------------------------------
-// | . ,  |  7  |  8  |  9  | ESC |    | PGUP | HOME |  UP  | END  | INS |
-// |  0   |  4  |  5  |  6  | TAB |    | PGDN | LEFT | SPC  | RGHT | RET |
-// | PSCR |  1  |  2  |  3  | Vdn |    | Vup  | DEL  | DOWN | APP | Ralt |
-//             | _SYM(BSPC) |     |    |      | SHFT |
+// | . , |  7  |  8  |  9  | ESC  |    | PGUP | HOME |  UP  | END  | INS |
+// |  0  |  4  |  5  |  6  | TAB  |    | PGDN | LEFT | SPC  | RGHT | RET |
+// |     |  1  |  2  |  3  | wC&P |    | mC&P | DEL  | DOWN | APP | PSCR |
+//            | _SYM(BSPC) |      |    |      | SHFT |
                         bindings = <
-   &kp KP_DOT   &kp N7        &kp N8       &kp N9        &kp ESC         &kp PG_UP    &kp HOME        &kp UP          &kp END          &kp INS
-   &hml LALT N0 &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp TAB         &kp PG_DN    &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
-   &kp PSCRN    &kp N1        &kp N2       &kp N3        &kp C_VOL_DN    &kp C_VOL_UP &kp DEL         &kp DOWN        &kp K_APP        &kp RALT
+   &kp KP_DOT   &kp N7        &kp N8       &kp N9        &kp ESC         &kp PG_UP  &kp HOME        &kp UP          &kp END          &kp INS
+   &hml LALT N0 &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp TAB         &kp PG_DN  &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
+   &none        &kp N1        &kp N2       &kp N3        &win_cp         &mac_cp    &kp DEL         &kp DOWN        &kp K_APP        &kp PSCRN
                                           &bst _SYM BSPC &none           &none  &kp LSHFT
                         >;
                 };
@@ -389,12 +406,12 @@
 // -------------------------------    -------------------------------
 // |  @  |  #  |  $  |  %  |  {  |    |  }  |  &  |  '  |  "  |  |  |
 // |  /  |  *  |  -  |  +  |  (  |    |  )  |  ?  |  ,  |  .  |  \  |
-// |  `  |  ^  |  _  |  =  |  [  |    |  ]  |  !  |  ;  |  :  | Ralt |
+// |  `  |  ^  |  _  |  =  |  [  |    |  ]  |  !  |  ;  |  :  |  ~  |
 //                  | BSPC |     |    |     | _NAV(SPC) |
                         bindings = <
    &kp AT          &kp HASH        &kp DLLR        &kp PRCNT       &kp LBRC      &kp RBRC &kp AMPS         &kp SQT         &kp DQT        &kp PIPE
    &hml LALT SLASH &hml LCTRL STAR &hml LGUI MINUS &hsl LSHFT PLUS &kp LPAR      &kp RPAR &hsr LSHFT QMARK &hmr LGUI COMMA &hmr LCTRL DOT &hmr LALT BSLH
-   &kp GRAVE       &kp CARET       &kp UNDER       &kp EQUAL       &kp LBKT      &kp RBKT &kp EXCL         &kp SEMI        &kp COLON      &kp RALT
+   &kp GRAVE       &kp CARET       &kp UNDER       &kp EQUAL       &kp LBKT      &kp RBKT &kp EXCL         &kp SEMI        &kp COLON      &kp TILDE
                                                          &kp BSPC  &none         &none   &spt _NAV SPACE
                         >;
                 };
