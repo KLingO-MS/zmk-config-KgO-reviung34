@@ -379,12 +379,12 @@
 // |  B  |  C  |  D  |  L  |  W  |    |  F  |  M  |  O  |  U  |  Y  |
 // |  N  |  S  |  T  |  R  |  J  |    |  G  |  H  |  A  |  E  |  I  |
 // |  v- |  Z  |  P  |  V  |  <  |    |  >  |  K  |  Q  |  X  |  v+ |
-//            | _SYM(BSPC) |  +  |    |  =  | _NAV(SPC) |
+//            | _SYM(BSPC) |  =  |    |  +  | _NAV(SPC) |
                         bindings = <
    &kp B        &kp C        &kp D       &kp L        &kp W       &kp F  &kp M        &kp O       &kp U        &kp Y
    &hml LALT N  &hml LCTRL S &hml LGUI T &hsl LSHFT R &kp J       &kp G  &hsr LSHFT H &hmr LGUI A &hmr LCTRL E &hmr LALT I
    &kp C_VOL_DN &kp Z        &kp P       &kp V        &kp LT      &kp GT &kp K        &kp Q       &kp X        &kp C_VOL_UP
-                                   &bst _SYM BSPC  &kp PLUS       &kp EQUAL  &spt _NAV SPACE
+                                   &bst _SYM BSPC  &kp EQUAL      &kp PLUS  &spt _NAV SPACE
                         >;
                 };
 
