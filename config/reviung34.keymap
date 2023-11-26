@@ -277,21 +277,21 @@
 
     behaviors {
 // ------------------------- TAP-DANCES --------------------------------
-        // win_cp: win_cp {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "CTRL_COPY_PASTA";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <400>;
-        //     bindings = <&kp LC(C)>, <&kp LC(V)>;
-        // };
+        win_cp: win_cp {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CTRL_COPY_PASTA";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp LC(C)>, <&kp LC(V)>;
+        };
 
-        // mac_cp: mac_cp {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "GUI_COPY_PASTA";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <400>;
-        //     bindings = <&kp LG(C)>, <&kp LG(V)>;
-        // };
+        mac_cp: mac_cp {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GUI_COPY_PASTA";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp LG(C)>, <&kp LG(V)>;
+        };
 
 // ------------------------- HOLD-TAPS --------------------------------
         /* left-hand HRMs */
@@ -376,14 +376,14 @@
 
                 base_layer {
 // -------------------------------    -------------------------------
-// |  B  |  C  |  D  |  L  |  W  |    |  F  |  M  |  O  |  U  |  Y  |
-// |  N  |  S  |  T  |  R  |  J  |    |  G  |  H  |  A  |  E  |  I  |
-// |  v- |  Z  |  P  |  V  |  <  |    |  >  |  K  |  Q  |  X  |  v+ |
+// |  Z  |  C  |  L  |  D  |  B  |    |  F  |  M  |  O  |  U  |  Y  |
+// |  R  |  S  |  N  |  T  |  G  |    |  J  |  H  |  A  |  E  |  I  |
+// |  v- |  W  |  V  |  P  |  <  |    |  >  |  K  |  X  |  Q  |  v+ |
 //            | _SYM(BSPC) |  =  |    |  +  | _NAV(SPC) |
                         bindings = <
-   &kp B        &kp C        &kp D       &kp L        &kp W       &kp F  &kp M        &kp O       &kp U        &kp Y
-   &hml LALT N  &hml LCTRL S &hml LGUI T &hsl LSHFT R &kp J       &kp G  &hsr LSHFT H &hmr LGUI A &hmr LCTRL E &hmr LALT I
-   &kp C_VOL_DN &kp Z        &kp P       &kp V        &kp LT      &kp GT &kp K        &kp Q       &kp X        &kp C_VOL_UP
+   &kp Z        &kp C        &kp L       &kp D        &kp B       &kp F  &kp M        &kp O       &kp U        &kp Y
+   &hml LALT R  &hml LCTRL S &hml LGUI N &hsl LSHFT T &kp G       &kp J  &hsr LSHFT H &hmr LGUI A &hmr LCTRL E &hmr LALT I
+   &kp C_VOL_DN &kp W        &kp V       &kp P        &kp LT      &kp GT &kp K        &kp Q       &kp X        &kp C_VOL_UP
                                    &bst _SYM BSPC  &kp EQUAL      &kp PLUS  &spt _NAV SPACE
                         >;
                 };
@@ -392,12 +392,12 @@
 // -------------------------------    -----------------------------------
 // | . , |  7  |  8  |  9  | ESC |    | PGUP | HOME |  UP  | END  | INS |
 // |  0  |  4  |  5  |  6  | TAB |    | PGDN | LEFT | SPC  | RGHT | RET |
-// |     |  1  |  2  |  3  |     |    | PSCR | DEL  | DOWN | APP  |  v. |
+// | PRN |  1  |  2  |  3  | wCP |    | mCP  | DEL  | DOWN | APP  |  v. |
 //            | _SYM(BSPC) |     |    |      | SHFT |
                         bindings = <
    &kp KP_DOT   &kp N7        &kp N8       &kp N9        &kp ESC         &kp PG_UP  &kp HOME        &kp UP          &kp END          &kp INS
    &hml LALT N0 &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp TAB         &kp PG_DN  &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
-   &none        &kp N1        &kp N2       &kp N3        &none           &kp PSCRN  &kp DEL         &kp DOWN        &kp K_APP        &kp C_MUTE
+   kp PSCRN     &kp N1        &kp N2       &kp N3        &win_cp         &mac_cp    &kp DEL         &kp DOWN        &kp K_APP        &kp C_MUTE
                                           &bst _SYM BSPC &none           &none  &kp LSHFT
                         >;
                 };
