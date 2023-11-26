@@ -397,7 +397,7 @@
                         bindings = <
    &kp KP_DOT   &kp N7        &kp N8       &kp N9        &kp ESC         &kp PG_UP  &kp HOME        &kp UP          &kp END          &kp INS
    &hml LALT N0 &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp TAB         &kp PG_DN  &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
-   kp PSCRN     &kp N1        &kp N2       &kp N3        &win_cp         &mac_cp    &kp DEL         &kp DOWN        &kp K_APP        &kp C_MUTE
+   &kp PSCRN    &kp N1        &kp N2       &kp N3        &win_cp         &mac_cp    &kp DEL         &kp DOWN        &kp K_APP        &kp C_MUTE
                                           &bst _SYM BSPC &none           &none  &kp LSHFT
                         >;
                 };
