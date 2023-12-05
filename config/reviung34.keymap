@@ -376,13 +376,13 @@
 
                 base_layer {
 // -------------------------------    -------------------------------
-// |  J  |  C  |  L  |  D  |  B  |    |  F  |  P  |  O  |  U  |  Y  |
-// |  R  |  S  |  N  |  T  |  W  |    |  G  |  H  |  A  |  E  |  I  |
+// |  B  |  C  |  L  |  D  |  W  |    |  F  |  P  |  O  |  U  |  Y  |
+// |  N  |  S  |  R  |  T  |  G  |    |  J  |  H  |  A  |  E  |  I  |
 // |  v- |  Z  |  V  |  M  |  <  |    |  >  |  K  |  Q  |  X  |  v+ |
 //            | _SYM(BSPC) |  =  |    |  +  | _NAV(SPC) |
                         bindings = <
-   &kp J        &kp C        &kp L       &kp D        &kp B       &kp F  &kp P        &kp O       &kp U        &kp Y
-   &hml LALT R  &hml LCTRL S &hml LGUI N &hsl LSHFT T &kp W       &kp G  &hsr LSHFT H &hmr LGUI A &hmr LCTRL E &hmr LALT I
+   &kp B        &kp C        &kp L       &kp D        &kp W       &kp F  &kp P        &kp O       &kp U        &kp Y
+   &hml LALT N  &hml LCTRL S &hml LGUI R &hsl LSHFT T &kp G       &kp J  &hsr LSHFT H &hmr LGUI A &hmr LCTRL E &hmr LALT I
    &kp C_VOL_DN &kp Z        &kp V       &kp M        &kp LT      &kp GT &kp K        &kp Q       &kp X        &kp C_VOL_UP
                                    &bst _SYM BSPC  &kp EQUAL      &kp PLUS  &spt _NAV SPACE
                         >;
