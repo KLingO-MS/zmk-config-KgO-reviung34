@@ -10,7 +10,7 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: urob
+      remote: zmkfirmware
 #      revision: fix-battery-reporting
 #      revision: custom-wq-pr
       revision: main
