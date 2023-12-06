@@ -21,18 +21,6 @@
 #define RGB_NAV RGB_COLOR_HSB(120,80,3)
 #define RGB_BTF RGB_COLOR_HSB(230,100,4)
 
-&sk {
-    quick-release;
-};
-
-&sl {
-    release-after-ms = <300>;
-};
-
-&num_word {
-    layers = <_SYM>;  // replace NUM by the location of numbers layer
-};
-
 / {
 // ------------------------- MACROS --------------------------------
     macros {
