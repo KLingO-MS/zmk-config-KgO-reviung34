@@ -363,13 +363,13 @@
 
                 nav_layer {
 // -------------------------------    ----------------------------------
-// | ESC |  7  |  8  |  9  |  0  |    | INS | HOME |  UP  | END  | DEL |
-// | TAB |  4  |  5  |  6  |  ., |    | APP | LEFT | SPC  | RGHT | RET |
+// | ESC |  7  |  8  |  9  | TAB |    | INS | HOME |  UP  | END  | DEL |
+// |  0  |  4  |  5  |  6  |  ., |    | APP | LEFT | SPC  | RGHT | RET |
 // | PRN |  1  |  2  |  3  | wCP |    | mCP | PGUP | DOWN | PGDN |  v. |
 //            | _SYM(BSPC) |     |    |     | SHFT |
                         bindings = <
-   &kp ESC       &kp N7        &kp N8       &kp N9        &kp N0          &kp INS    &kp HOME        &kp UP          &kp END          &kp DEL
-   &hml LALT TAB &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp KP_DOT      &kp K_APP  &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
+   &kp ESC       &kp N7        &kp N8       &kp N9        &kp TAB         &kp INS    &kp HOME        &kp UP          &kp END          &kp DEL
+   &hml LALT N0  &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp KP_DOT      &kp K_APP  &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
    &kp PSCRN     &kp N1        &kp N2       &kp N3        &win_cp         &mac_cp    &kp PG_UP       &kp DOWN        &kp PG_DN        &kp C_MUTE
                                            &bst _SYM BSPC &none           &none  &kp LSHFT
                         >;
