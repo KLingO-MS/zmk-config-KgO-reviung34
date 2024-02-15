@@ -349,14 +349,14 @@
 
                 base_layer {
 // -------------------------------    -------------------------------
-// |  B  |  C  |  D  |  L  |  W  |    |  F  |  P  |  O  |  U  |  Y  |
+// |  B  |  C  |  D  |  L  |  W  |    |  F  |  M  |  O  |  U  |  Y  |
 // |  N  |  S  |  T  |  R  |  J  |    |  G  |  H  |  A  |  E  |  I  |
-// | WCP |  Z  |  M  |  V  |  <  |    |  >  |  K  |  Q  |  X  | mCP |
+// | WCP |  Z  |  P  |  V  |  <  |    |  >  |  K  |  Q  |  X  | mCP |
 //            | _SYM(BSPC) |  =  |    |  +  | _NAV(SPC) |
                         bindings = <
-   &kp B        &kp C        &kp D       &kp L        &kp W       &kp F  &kp P        &kp O       &kp U        &kp Y
+   &kp B        &kp C        &kp D       &kp L        &kp W       &kp F  &kp M        &kp O       &kp U        &kp Y
    &hml LALT N  &hml LCTRL S &hml LGUI T &hsl LSHFT R &kp J       &kp G  &hsr LSHFT H &hmr LGUI A &hmr LCTRL E &hmr LALT I
-   &win_cp      &kp Z        &kp M       &kp V        &kp LT      &kp GT &kp K        &kp Q       &kp X        &mac_cp
+   &win_cp      &kp Z        &kp P       &kp V        &kp LT      &kp GT &kp K        &kp Q       &kp X        &mac_cp
                                    &bst _SYM BSPC  &kp EQUAL      &kp PLUS  &spt _NAV SPACE
                         >;
                 };
