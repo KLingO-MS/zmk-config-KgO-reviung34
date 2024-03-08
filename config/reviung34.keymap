@@ -178,83 +178,56 @@
         // };
 
 // ------------------------- CHARACTER COMBOS --------------------------------
-        // combo_MUTE {
-        //     timeout-ms = <40>;
-        //     key-positions = <RMI RMR>;
-        //     bindings = <&kp C_MUTE>;
-        //     // layers = <_BASE _SYM>;
-        // };
+        combo_YOU {
+            timeout-ms = <50>;
+            key-positions = <RTI RTM RTR>;
+            bindings = <&You>;
+            layers = <_BASE>;
+        };
 
-        // combo_LPAR {
-        //     timeout-ms = <40>;
-        //     key-positions = <LMM LMI>;
-        //     bindings = <&kp LPAR>;
-        //     layers = <_BASE _SYM>;
-        // };
+// ------------------------- SYMBOL COMBOS --------------------------------
+        combo_LPAR {
+            timeout-ms = <45>;
+            key-positions = <LMM LMI>;
+            bindings = <&kp LPAR>;
+            layers = <_BASE _SYM>;
+        };
 
-        // combo_RPAR {
-        //     timeout-ms = <40>;
-        //     key-positions = <RMI RMM>;
-        //     bindings = <&kp RPAR>;
-        //     layers = <_BASE _SYM>;
-        // };
+        combo_RPAR {
+            timeout-ms = <45>;
+            key-positions = <RMI RMM>;
+            bindings = <&kp RPAR>;
+            layers = <_BASE _SYM>;
+        };
 
-        // combo_LBRC {
-        //     timeout-ms = <40>;
-        //     key-positions = <LTM LTI>;
-        //     bindings = <&kp LBRC>;
-        //     layers = <_BASE _SYM>;
-        // };
+        combo_LBRC {
+            timeout-ms = <45>;
+            key-positions = <LTM LTI>;
+            bindings = <&kp LBRC>;
+            layers = <_BASE _SYM>;
+        };
 
-        // combo_RBRC {
-        //     timeout-ms = <40>;
-        //     key-positions = <RTI RTM>;
-        //     bindings = <&kp RBRC>;
-        //     layers = <_BASE _SYM>;
-        // };
+        combo_RBRC {
+            timeout-ms = <45>;
+            key-positions = <RTI RTM>;
+            bindings = <&kp RBRC>;
+            layers = <_BASE _SYM>;
+        };
 
-        // combo_LBKT {
-        //     timeout-ms = <40>;
-        //     key-positions = <LBM LBI>;
-        //     bindings = <&kp LBKT>;
-        //     layers = <_BASE _SYM>;
-        // };
+        combo_LBKT {
+            timeout-ms = <45>;
+            key-positions = <LBM LBI>;
+            bindings = <&kp LBKT>;
+            layers = <_BASE _SYM>;
+        };
 
-        // combo_RBKT {
-        //     timeout-ms = <40>;
-        //     key-positions = <RBI RBM>;
-        //     bindings = <&kp RBKT>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_GT {
-        //     timeout-ms = <45>;
-        //     key-positions = <RBM RBR>;
-        //     bindings = <&kp GT>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_LT {
-        //     timeout-ms = <45>;
-        //     key-positions = <LBM LBR>;
-        //     bindings = <&kp LT>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_FSLH {
-        //     timeout-ms = <45>;
-        //     key-positions = <RMM RMR>;
-        //     bindings = <&kp FSLH>;
-        //     layers = <_BASE _SYM>;
-        // };
-
-        // combo_BSLH {
-        //     timeout-ms = <45>;
-        //     key-positions = <LMR LMM>;
-        //     bindings = <&kp BSLH>;
-        //     layers = <_BASE _SYM>;
-        // };
-    };
+        combo_RBKT {
+            timeout-ms = <45>;
+            key-positions = <RBI RBM>;
+            bindings = <&kp RBKT>;
+            layers = <_BASE _SYM>;
+        };
+    }
 
     behaviors {
 // ------------------------- TAP-DANCES --------------------------------
