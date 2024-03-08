@@ -227,7 +227,7 @@
             bindings = <&kp RBKT>;
             layers = <_BASE _SYM>;
         };
-    }
+    };
 
     behaviors {
 // ------------------------- TAP-DANCES --------------------------------
