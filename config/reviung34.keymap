@@ -354,52 +354,52 @@
 // | WCP |  Z  |  V  |  M  |  <  |    |  >  |  K  |  Q  |  X  | mCP |
 //            | _SYM(BSPC) |  =  |    |  +  | _NAV(SPC) |
                         bindings = <
-   &kp B        &kp C        &kp P       &kp L        &kp W       &kp G  &kp H        &kp O       &kp U        &kp Y
-   &hml LALT N  &hml LCTRL S &hml LGUI T &hsl LSHFT R &kp J       &kp F  &hsr LSHFT D &hmr LGUI A &hmr LCTRL E &hmr LALT I
+   &kp B        &kp C        &kp P       &kp L        &kp W       &kp F  &kp D        &kp O       &kp U        &kp Y
+   &hml LALT N  &hml LCTRL S &hml LGUI T &hsl LSHFT R &kp J       &kp G  &hsr LSHFT H &hmr LGUI A &hmr LCTRL E &hmr LALT I
    &win_cp      &kp Z        &kp V       &kp M        &kp LT      &kp GT &kp K        &kp Q       &kp X        &mac_cp
-                                   &bst _SYM BSPC  &kp EQUAL      &kp PLUS  &spt _NAV SPACE
+                             &bst _SYM BSPC  &bst _NAV EQUAL      &spt _SYM PLUS  &spt _NAV SPACE
                         >;
                 };
 
                 nav_layer {
 // -------------------------------    ----------------------------------
-// | ESC |  7  |  8  |  9  | TAB |    | INS | HOME |  UP  | END  | DEL |
-// |  0  |  4  |  5  |  6  |  ., |    | APP | LEFT | SPC  | RGHT | RET |
-// |  v. |  1  |  2  |  3  |  v- |    | mCP | PGUP | DOWN | PGDN |  v. |
+// | . , |  7  |  8  |  9  | INS |    | pUP | HOME |  UP  | END  | ESC |
+// |  0  |  4  |  5  |  6  | PSC |    | pDN | LEFT | SPC  | RGHT | RET |
+// |  v. |  1  |  2  |  3  |  v- |    |  v+ | TAB  | DOWN | DEL  | APP |
 //            | _SYM(BSPC) |     |    |     | SHFT |
                         bindings = <
-   &kp ESC       &kp N7        &kp N8       &kp N9        &kp TAB         &kp INS      &kp HOME        &kp UP          &kp END          &kp DEL
-   &hml LALT N0  &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp KP_DOT      &kp PSCRN    &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
-   &kp C_MUTE    &kp N1        &kp N2       &kp N3        &kp C_VOL_DN    &kp C_VOL_UP &kp PG_UP       &kp DOWN        &kp PG_DN        &kp K_APP
+   &kp KP_DOT    &kp N7        &kp N8       &kp N9        &kp INS         &kp PG_UP    &kp HOME        &kp UP          &kp END          &kp ESC
+   &hml LALT N0  &hml LCTRL N4 &hml LGUI N5 &hsl LSHFT N6 &kp PSCRN       &kp PG_DN    &hsr LSHFT LEFT &hmr LGUI SPACE &hmr LCTRL RIGHT &hmr LALT RET
+   &kp C_MUTE    &kp N1        &kp N2       &kp N3        &kp C_VOL_DN    &kp C_VOL_UP &kp TAB         &kp DOWN        &kp DEL          &kp K_APP
                                            &bst _SYM BSPC &none           &none  &kp LSHFT
                         >;
                 };
                 
                 sym_layer {
 // -------------------------------    -------------------------------
-// |  \  |  |  |  =  |  _  |  {  |    |  }  |  "  |  ;  |  :  |  !  |
-// |  /  |  *  |  +  |  -  |  (  |    |  )  |  '  |  ,  |  .  |  ?  |
+// |  \  |  |  |  _  |  =  |  {  |    |  }  |  "  |  ;  |  :  |  !  |
+// |  /  |  *  |  -  |  +  |  (  |    |  )  |  '  |  ,  |  .  |  ?  |
 // |  `  |  &  |  ^  |  %  |  [  |    |  ]  |  @  |  #  |  $  |  ~  |
 //                  | BSPC |     |    |     | _NAV(SPC) |
                         bindings = <
-   &kp BSLH        &kp PIPE        &kp EQUAL      &kp UNDER        &kp LBRC      &kp RBRC &kp DQT        &kp SEMI        &kp COLON      &kp EXCL
-   &hml LALT SLASH &hml LCTRL STAR &hml LGUI PLUS &hsl LSHFT MINUS &kp LPAR      &kp RPAR &hsr LSHFT SQT &hmr LGUI COMMA &hmr LCTRL DOT &hmr LALT QMARK
-   &kp GRAVE       &kp AMPS        &kp CARET      &kp PRCNT        &kp LBKT      &kp RBKT &kp AT         &kp HASH        &kp DLLR       &kp TILDE
+   &kp BSLH        &kp PIPE        &kp UNDER       &kp EQUAL       &kp LBRC      &kp RBRC &kp DQT        &kp SEMI        &kp COLON      &kp EXCL
+   &hml LALT SLASH &hml LCTRL STAR &hml LGUI MINUS &hsl LSHFT PLUS &kp LPAR      &kp RPAR &hsr LSHFT SQT &hmr LGUI COMMA &hmr LCTRL DOT &hmr LALT QMARK
+   &kp GRAVE       &kp AMPS        &kp CARET       &kp PRCNT       &kp LBKT      &kp RBKT &kp AT         &kp HASH        &kp DLLR       &kp TILDE
                                                          &kp BSPC  &none         &none   &spt _NAV SPACE
                         >;
                 };
                 
                 btf_layer {
-// ----------------------------    ---------------------------------
-// | ESC | F7 | F8 | F9 | F11 |    | BT1 | BT2  | BT3 | BT4  | BT5 |
-// | F10 | F4 | F5 | F6 | F12 |    |     | SHFT | GUI | CTRL | ALT |
-// |     | F1 | F2 | F3 |     |    |     | USB  | RGB | BT-  |     |
-//                |     |     |    |     |     |
+// -------------------------------    ----------------------------
+// | BT1 | BT2 | BT3 | BT4 | BT5 |    | F11 | F7 | F8 | F9 | F10 |    
+// | ALT | CTL | GUI | SFT | USB |    | F12 | F4 | F5 | F6 |     |
+// | CLR |  v- |  v. |  v+ | RGB |    |     | F1 | F2 | F3 | APP |
+//                   |     |     |    |     |     |
                         bindings = <
-   &kp ESC &kp F7 &kp F8 &kp F9 &kp F11   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_SEL 3 &bt BT_SEL 4
-   &kp F10 &kp F4 &kp F5 &kp F6 &kp F12   &none        &kp LSHFT    &kp LGUI        &kp LCTRL    &kp LALT
-   &none   &kp F1 &kp F2 &kp F3 &none     &none        &out OUT_TOG &rgb_ug RGB_TOG &bt BT_CLR   &none
-                          &none &none     &none &none
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &kp F11 &kp F7 &kp F8 &kp F9 &kp F10       
+   &kp LALT     &kp LCTRL    &kp LGUI     &kp LSHFT    &out OUT_TOG       &kp F12 &kp F4 &kp F5 &kp F6 &none     
+   &bt BT_CLR   &kp C_VOL_DN &kp C_MUTE   &kp C_VOL_UP &&rgb_ug RGB_TOG   &none   &kp F1 &kp F2 &kp F3 &kp K_APP         
+                                                    &none   &none         &none    &none
                         >;
                 };                
     };
