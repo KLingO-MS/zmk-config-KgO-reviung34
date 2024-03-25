@@ -376,16 +376,16 @@
                 };
                 
                 btf_layer {
-// -------------------------------    ----------------------------
-// | BT1 | BT2 | BT3 | BT4 | BT5 |    | F11 | F7 | F8 | F9 | F10 |    
-// | ALT | CTL | GUI | SFT | USB |    | F12 | F4 | F5 | F6 |     |
-// | CLR |  v- |  v. |  v+ | RGB |    |     | F1 | F2 | F3 | APP |
-//                   |     |     |    |     |     |
+// -------------------------------    -----------------------------
+// | BT1 | BT2 | BT3 | BT4 | BT5 |    | F1 | F2  | F3  | F4 | F5  |    
+// | ALT | CTL | GUI | SFT | USB |    | F6 | F7  | F8  | F9 | F10 |
+// | CLR |  v- |  v. |  v+ | RGB |    |    | F10 | F12 |    |     |
+//                   |     |     |    |    |     |
                         bindings = <
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &kp F11 &kp F7 &kp F8 &kp F9 &kp F10       
-   &kp LALT     &kp LCTRL    &kp LGUI     &kp LSHFT    &out OUT_TOG       &kp F12 &kp F4 &kp F5 &kp F6 &none     
-   &bt BT_CLR   &kp C_VOL_DN &kp C_MUTE   &kp C_VOL_UP &rgb_ug RGB_TOG    &none   &kp F1 &kp F2 &kp F3 &kp K_APP         
-                                                    &none   &none         &none    &none
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &kp F1 &kp F2  &kp F3  &kp F4 &kp F5       
+   &kp LALT     &kp LCTRL    &kp LGUI     &kp LSHFT    &out OUT_TOG       &kp F6 &kp F7  &kp F8  &kp F9 &kp F10     
+   &bt BT_CLR   &kp C_VOL_DN &kp C_MUTE   &kp C_VOL_UP &rgb_ug RGB_TOG    &none  &kp F11 &kp F12 &none  &none
+                                                    &none   &none         &none  &none
                         >;
                 };                
     };
